@@ -1,0 +1,245 @@
+body {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 390px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    padding-top: 35px;
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 16px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #548B6C;
+}
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+span {
+    font-size: 12px;
+}
+
+div {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+#menu-switcher {
+    display: none;
+}
+
+.burger {
+    position: absolute;
+    display: block;
+    padding-top: 44px;
+    right: 16px;
+}
+
+.menu {
+    background-color: #5FC080;
+    height: 844px;
+    position: absolute;
+    right: 0;
+    margin-top: 0;
+    z-index: 100;
+    transform: translateX(1000%);
+    transition: 0.6s;
+    list-style-type: none;
+    padding-top: 44px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+li{
+    padding-bottom: 10px;
+}
+
+#menu-switcher:checked~.menu {
+    transform: translateX(0%);
+}
+
+nav {
+    position: absolute;
+    z-index: 10000;
+    position: fixed;
+    width: 390px;
+    display: flex;
+    background-image: url(../img/nav.png);
+    height: 100px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.back {
+    padding-top: 45px;
+    padding-left: 16px;
+}
+
+.box1 {
+    background-image: url(../img/2-1.png);
+    height: 203px;
+    width: 390px;
+    margin-bottom: -141px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.box2 {
+    background-image: url(../img/2-2.png);
+    height: 248px;
+    width: 390px;
+    margin-bottom: -125px;
+    text-align: center;
+    padding-top: 140px;
+}
+
+.box3 {
+    background-image: url(../img/2-3.png);
+    height: 248px;
+    width: 390px;
+    margin-bottom: -125px;
+    text-align: center;
+    padding-top: 140px;
+}
+
+.box4 {
+    background-image: url(../img/2-4.png);
+    height: 248px;
+    width: 390px;
+    margin-bottom: -125px;
+    text-align: center;
+    padding-top: 140px;
+}
+
+.question-btn {
+    background-image: url(../img/2-5.png);
+    background-color: transparent;
+    border: none;
+    width: 390px;
+    height: 388px;
+    margin-bottom: -125px;
+    padding-bottom: 26px;
+}
+
+.questionmtext {
+    padding-left: 18px;
+}
+
+.text {
+    width: 354px;
+}
+
+.textg {
+    color: #548B6C;
+}
+
+.question-text {
+    display: none;
+    margin-top: 125px;
+}
+
+.minus-icon {
+    display: none;
+}
+
+.flex {
+    margin-top: -30px;
+    display: flex;
+    width: 390px;
+    height: 20px;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.flex2 {
+    display: flex;
+    width: 390px;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* 顯示回答區域*/
+.show-text .question-text {
+    display: block;
+}
+
+/* 顯示關閉按鈕*/
+.show-text .minus-icon {
+    display: inline;
+}
+
+/* 隱藏開啟按鈕*/
+.show-text .plus-icon {
+    display: none;
+}
+
+button {
+    background-color: #548B6C;
+    border: none;
+    color: rgb(255, 255, 255);
+    width: 354px;
+    height: 48px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box6 {
+    background-image: url(../img/2-6.png);
+    height: 248px;
+    width: 390px;
+    margin-bottom: -125px;
+    text-align: center;
+    padding-top: 140px;
+}
+
+.box7 {
+    background-image: url(../img/2-7.png);
+    height: 248px;
+    width: 390px;
+    margin-bottom: -125px;
+    text-align: center;
+    padding-top: 140px;
+}
+
+.box8 {
+    background-image: url(../img/2-8.png);
+    height: 248px;
+    width: 390px;
+    margin-bottom: -125px;
+    text-align: center;
+    padding-top: 140px;
+}
+
+.box9 {
+    background-image: url(../img/2-9.png);
+    height: 180px;
+    width: 390px;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 140px;
+
+}
