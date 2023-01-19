@@ -28,11 +28,13 @@ h3 {
     height: 12px;
     font-weight: bold;
     color: #548B6C;
+    margin-top: 0;
 }
 
 p {
     font-size: 16px;
     font-weight: normal;
+    margin-bottom: 0;
 }
 
 span {
@@ -152,7 +154,9 @@ nav {
     margin-bottom: -125px;
     padding-bottom: 26px;
 }
-
+.textb {
+    color: #6f6f6f;
+}
 .textg {
     color: #548B6C;
 }
@@ -164,7 +168,6 @@ nav {
 
 .trailimg {
     margin-right: 20px;
-
 }
 
 .icon {
@@ -174,12 +177,15 @@ nav {
 .trailtext {
     height: 12px;
 }
+.trail{
 
+    background-color: rgb(211, 154, 154);
+}
 
 .question-text {
     display: none;
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding-top: 75px;
+    padding-bottom: 100px;
     margin-bottom: -125px;
     background-color: rgb(255, 255, 255);
 }
