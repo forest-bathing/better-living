@@ -1,10 +1,20 @@
 body {
     margin-top: 0;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
     width: 390px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
+}
+
+h1 {
+    color: #548B6C;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 0;
 }
 
 h2 {
@@ -12,6 +22,15 @@ h2 {
     font-weight: normal;
     padding-left: 16px;
     line-height: 12px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+div {
+    display: inline-block;
 }
 
 a {
@@ -56,7 +75,6 @@ nav {
     position: fixed;
     width: 390px;
     display: flex;
-    background-color: #000;
     background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
     height: 56px;
     font-size: 20px;
@@ -65,4 +83,40 @@ nav {
 
 .back {
     padding-left: 16px;
+}
+
+.box1 {
+    width: 390px;
+    height: 800px;
+    background-image: url(../img/trail_x.png);
+    background-size: 100%;
+}
+
+.box2 {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 430px;
+    line-height: 34px;
+}
+
+.moon {
+    font-size: 16px;
+    line-height: 34px;
+    color: #CCCDD2;
+    margin-bottom: 39px;
+    margin-top: 0;
+}
+
+button {
+    background-color: #548B6C;
+    border: none;
+    color: rgb(255, 255, 255);
+    width: 354px;
+    height: 48px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-left: 18px;
+    position: fixed;
+    margin-left: -372px;
+    margin-top: 716px;
 }
