@@ -154,9 +154,11 @@ nav {
     margin-bottom: -125px;
     padding-bottom: 26px;
 }
+
 .textb {
     color: #6f6f6f;
 }
+
 .textg {
     color: #548B6C;
 }
@@ -176,10 +178,12 @@ nav {
 
 .trailtext {
     height: 12px;
+    color: #000;
 }
-.trail{
 
-    background-color: rgb(211, 154, 154);
+.trail {
+    display: flex;
+    margin-top: 20px;
 }
 
 .question-text {
