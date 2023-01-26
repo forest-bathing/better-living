@@ -34,18 +34,23 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 16px;
+    line-height: 12px;
+}
+
 nav {
     position: absolute;
     z-index: 10000;
     position: fixed;
     width: 390px;
     display: flex;
-    background-color: #000;
-    background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
+    /*background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));*/
     height: 56px;
     font-size: 20px;
     color: #ffffff;
-    margin-top: 0;
 }
 
 .back {

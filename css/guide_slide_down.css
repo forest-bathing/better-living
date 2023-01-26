@@ -18,16 +18,15 @@ h1{
     color: rgb(255, 255, 255);
 }
 
-h2 {
-    padding-top: 35px;
-    font-size: 20px;
-    font-weight: normal;
-    padding-left: 16px;
+p{
     color: rgb(255, 255, 255);
 }
 
-p{
-    color: rgb(255, 255, 255);
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 16px;
+    line-height: 12px;
 }
 
 nav {
@@ -36,14 +35,13 @@ nav {
     position: fixed;
     width: 390px;
     display: flex;
-    background-image: url(../img/nav.png);
-    height: 100px;
+    /*background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));*/
+    height: 56px;
     font-size: 20px;
     color: #ffffff;
 }
 
 .back {
-    padding-top: 45px;
     padding-left: 16px;
 }
 

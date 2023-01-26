@@ -75,7 +75,7 @@ nav {
     position: fixed;
     width: 390px;
     display: flex;
-    background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
+    /*background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));*/
     height: 56px;
     font-size: 20px;
     color: #ffffff;
