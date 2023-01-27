@@ -12,14 +12,19 @@ a {
     text-decoration: none;
 }
 
-h1{
+h1 {
     font-size: 100px;
     font-weight: normal;
     color: rgb(255, 255, 255);
 }
 
-p{
+p {
+    font-size: 20px;
     color: rgb(255, 255, 255);
+}
+
+span {
+    font-size: 12px;
 }
 
 h2 {
@@ -59,4 +64,9 @@ nav {
     height: 844px;
 }
 
-   
+.sun {
+    display: flex;
+}
+.np{
+    display: flex;
+}
