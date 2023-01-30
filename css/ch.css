@@ -45,6 +45,7 @@ div {
     display: inline-block;
 }
 
+/*nav*/
 a {
     text-decoration: none;
 }
@@ -96,7 +97,7 @@ nav {
 .back {
     padding-left: 16px;
 }
-
+/*nav*/
 .flex {
     margin-top: -30px;
     display: flex;
