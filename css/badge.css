@@ -10,6 +10,11 @@ body {
     background-color: #548B6C;
 }
 
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
 h2 {
     font-size: 20px;
     font-weight: normal;
@@ -27,10 +32,7 @@ a {
     text-decoration: none;
 }
 
-#menu-switcher {
-    display: none;
-}
-
+/*漢堡鍵*/
 .burger {
     position: absolute;
     display: block;
@@ -38,8 +40,8 @@ a {
 }
 
 .menu {
-    background-color: #5FC080;
-    height: 904px;
+    background-image: url(../img/burger.png);
+    height: 844px;
     position: absolute;
     right: 0;
     margin-top: 0;
@@ -51,12 +53,16 @@ a {
     padding-right: 16px;
 }
 
-li {
-    padding-bottom: 10px;
+#menu-switcher {
+    display: none;
 }
 
 #menu-switcher:checked~.menu {
     transform: translateX(0%);
+}
+
+li {
+    padding-bottom: 10px;
 }
 
 nav {
@@ -65,7 +71,7 @@ nav {
     position: fixed;
     display: flex;
     height: 150px;
-    width: 390px;    
+    width: 390px;
     font-size: 20px;
     color: #ffffff;
     background-image: url(../img/badge.png);
@@ -107,16 +113,46 @@ nav {
 #close {
     background-color: transparent;
     border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 #infoModal {
-width: 358px;
-    height: 563px;
-    background-color: #ffffff;
+    text-align: center;
     border: none;
+    border-radius: 30px;
+    width: 326px;
 }
 
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 30%);
-    filter: blur(100px);
+    filter: blur(15px);
 }
+
+.infoimg {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.info {
+    text-align: start;
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+
+.infotext {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+.infotext_g {
+    font-size: 14px;
+    color: #6F6F6F;
+}
+
+.icon {
+    margin-bottom: -3px;
+}
+

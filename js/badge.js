@@ -1,3 +1,4 @@
+
 let btn = document.querySelector("#show");
 let infoModal = document.querySelector("#infoModal");
 let close = document.querySelector("#close");
@@ -7,3 +8,5 @@ btn.addEventListener("click", function () {
 close.addEventListener("click", function () {
     infoModal.close();
 })
+
+
