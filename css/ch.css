@@ -153,6 +153,8 @@ nav {
     height: 388px;
     margin-bottom: -125px;
     padding-bottom: 26px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 .textb {

@@ -26,6 +26,7 @@ h2 {
 p {
     font-size: 16px;
     font-weight: normal;
+
 }
 
 div {
@@ -101,9 +102,14 @@ nav {
     display: inline;
     text-align: center;
     line-height: 20px;
+
     width: 88px;
 }
 
+
+.text{
+    line-height: 48px;
+}
 .box {
     display: flex;
 }
