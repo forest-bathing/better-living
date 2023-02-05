@@ -19,26 +19,14 @@ h1 {
     color: #548B6C;
 }
 
-h2 {
-    font-size: 20px;
-    font-weight: normal;
-    padding-left: 16px;
-    line-height: 12px;
-}
-
-.back {
-    padding-left: 16px;
-}
-
-nav {
-    position: absolute;
-    z-index: 10000;
-    position: fixed;
+body {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
     width: 390px;
-    display: flex;
-    height: 56px;
-    font-size: 20px;
-    color: #ffffff;
+    height: 800px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .box {
