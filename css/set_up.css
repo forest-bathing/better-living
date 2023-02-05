@@ -18,6 +18,9 @@ h1 {
     color: #ffffff;
     font-size: 26px;
     font-weight: bold;
+    text-align: center;
+    margin-left: -32px;
+    margin-bottom: 74px;
 }
 
 h2 {
@@ -81,7 +84,7 @@ nav {
     background-size: 100%;
     height: 590px;
     padding-top: 210px;
-    text-align: center;
+    padding-left: 32px;
 }
 
 .sticky-bottom {
@@ -96,5 +99,8 @@ nav {
     position: fixed;
     top: 700px;
     z-index: 1000;
+}
 
+.icon {
+    margin-bottom: -3px;
 }
