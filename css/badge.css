@@ -13,6 +13,7 @@ body {
 h1 {
     font-weight: bold;
     font-size: 24px;
+    line-height: 24px;
 }
 
 h2 {
@@ -123,6 +124,7 @@ nav {
     border: none;
     border-radius: 30px;
     width: 326px;
+    height: 538px;
 }
 
 dialog::backdrop {
@@ -138,13 +140,15 @@ dialog::backdrop {
 
 .info {
     text-align: start;
-    line-height: 25px;
+   
     margin-bottom: 12px;
+    margin-top: -20px;
 }
 
 .infotext {
     font-size: 14px;
     color: rgb(0, 0, 0);
+     line-height: 20px;
 }
 
 .infotext_g {
