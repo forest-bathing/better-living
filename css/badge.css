@@ -104,14 +104,14 @@ nav {
     padding-top: 150px;
 }
 
-#show {
+.show {
     width: 100px;
     height: 90px;
     background-color: transparent;
     border: none;
 }
 
-#close {
+.close {
     background-color: transparent;
     border: none;
     position: absolute;
@@ -119,7 +119,7 @@ nav {
     top: 0;
 }
 
-#infoModal {
+.infoModal {
     text-align: center;
     border: none;
     border-radius: 30px;
@@ -140,7 +140,6 @@ dialog::backdrop {
 
 .info {
     text-align: start;
-   
     margin-bottom: 12px;
     margin-top: -20px;
 }
@@ -160,3 +159,15 @@ dialog::backdrop {
     margin-bottom: -3px;
 }
 
+/*石虎*/
+.popup {
+    cursor: pointer;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+}
+
+.popup .show {
+    visibility: visible;
+}

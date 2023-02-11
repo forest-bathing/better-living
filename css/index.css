@@ -10,6 +10,10 @@ body {
     color: rgb(255, 255, 255);
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 nav {
     width: 390px;
     display: flex;
@@ -105,9 +109,10 @@ p {
     color: rgb(255, 255, 255);
 }
 
-.icon{
+.icon {
     margin-bottom: 3px;
 }
+
 .box2 {
     position: absolute;
     height: 250px;
@@ -119,18 +124,20 @@ p {
 }
 
 /* 旋轉木馬 */
-.allseason{
+.allseason {
     width: 390px;
     height: 250px;
     height: 100%;
 }
-.season{
+
+.season {
     margin-bottom: -50px;
     width: 390px;
 
     width: 100%;
 
 }
+
 .role {
     margin-top: -50px;
     margin-bottom: -50px;
@@ -139,24 +146,26 @@ p {
     width: 100%;
     height: 100%;
 }
-                     
+
 .roleimg {
     width: 390px;
     height: 180px;
 }
-.text1h3{
+
+.text1h3 {
     position: absolute;
     top: 0;
 }
-.text1{
+
+.text1 {
     position: absolute;
     bottom: 0;
 }
 
-/* 旋轉木馬 */ 
+/* 旋轉木馬 */
 .box4 {
     position: absolute;
- /*   background-image: url(../img/4.png);
+    /*   background-image: url(../img/4.png);
     background-size: 100% 100%;
     width: 390px;
     height: 180px;
