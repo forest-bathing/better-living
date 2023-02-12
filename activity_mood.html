@@ -19,13 +19,14 @@
         <h2>森伯伯的信箱</h2>
     </nav>
     <div class="box">
-
-        <p>2022 . 11 . 28 <br>現在心情如何呢？</p>
-        <img src="./img/treeuncle2.png" alt="" width="340px">
+        <p class="date">2022 . 11 . 28 </p>
+        <p class="text">現在心情如何呢？</p>
+        <div id="Box1" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+        </div>
         <div class="w">
             <div class="treeuncle">
                 <img src="./img/treeuncle1.png" alt="" width="80px">
-                <img src="./img/treeuncle2.png" alt="" width="80px">
+                <img id="Img1" src="./img/treeuncle2.png" draggable="true" ondragstart="Drag(event)" width="80px">
                 <img src="./img/treeuncle3.png" alt="" width="80px">
                 <img src="./img/treeuncle4.png" alt="" width="80px">
                 <img src="./img/treeuncle5.png" alt="" width="80px">
@@ -35,6 +36,8 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="./js/activity_mood.js"></script>
 </body>
 
 </html>
