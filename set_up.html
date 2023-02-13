@@ -32,23 +32,35 @@
         </ul>
     </nav>
     <div class="box">
-        <h1>Yvonne</h1>
-        <h3>提醒</h3>
-        <p><img src="./img/Activity.svg" alt="" class="icon"> 活動</p>
-        <p><img src="./img/sunset_icon_g.svg" alt="" class="icon"> 下山 <span> 日落前60分鐘</span></p>
-        <p><img src="./img/min_g.svg" alt="" class="icon"> 時間</p>
+        <div>
+            <h1>Yvonne</h1>
+            <h3>提醒</h3>
+            <p><img src="./img/Activity.svg" alt="" class="icon"> 活動</p>
+            <p><img src="./img/sunset_icon_g.svg" alt="" class="icon"> 下山 <span> 日落前60分鐘</span></p>
+            <p><img src="./img/min_g.svg" alt="" class="icon"> 時間</p>
+
+            <div class="button">
+                <div id="container" class="container">
+                    <div class="circle" onclick="toggle()"></div>
+                </div>
+                <div id="container2" class="container">
+                    <div class="circle" onclick="toggle2()"></div>
+                </div>
+                <div id="container3" class="container">
+                    <div class="circle" onclick="toggle3()"></div>
+                </div>
+            </div>
+        </div>
         <h3>其他</h3>
         <p><img src="./img/language.svg" alt="" class="icon"> 語言<span> 繁體中文</span><img src="./img/arrow_g.svg" alt=""
                 width="20px" class="icon"></p>
-    </div>
 
-    <div id="container" class="container">
-        <div class="circle" onclick="toggle()"></div>
+
     </div>
 
     <a href="./guide.html"><button class="sticky-bottom">登出</button></a>
-    
-    <script type="text/javascript" src="./js/ch.js"></script>
+
+    <script type="text/javascript" src="./js/set_up.js"></script>
 </body>
 
 </html>
