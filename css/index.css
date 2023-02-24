@@ -8,22 +8,46 @@ body {
     width: 390px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
-    overflow: hidden;
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
 
+h1 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+}
+
+.p12 {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
 nav {
     width: 390px;
     display: flex;
-    height: 56px;
-    background-image: url(../img/nav.png);
+    height: 275px;
+    background-image: url(../img/0.png);
     position: absolute;
     position: fixed;
-    z-index: 10000;
-    margin-top: -56px;
 }
 
 .weather {
@@ -40,10 +64,12 @@ nav {
     margin-left: 4px;
     font-size: 18px;
     line-height: 50px;
+    margin-top: 0;
 }
 
 .weatherC {
     margin-left: 0;
+    margin-top: 0;
     font-size: 15px;
     line-height: 50px;
 }
@@ -64,6 +90,13 @@ a {
     position: absolute;
     display: block;
     right: 16px;
+}
+
+.name {
+    position: absolute;
+    right: 30px;
+    left: 30px;
+    top: 51px;
 }
 
 .menu {
@@ -88,94 +121,31 @@ li {
     transform: translateX(0%);
 }
 
-h1 {
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-h2 {
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 20px;
-}
-
-p {
-    font-size: 16px;
-    font-weight: normal;
-    color: rgb(255, 255, 255);
-}
-
 .icon {
     margin-bottom: 3px;
 }
 
+.box1 {
+    background-image: url(../img/1.png);
+    background-size: 100%;
+    height: 164px;
+    width: 390px;
+    margin-bottom: -125px;
+    padding-top: 349px;
+}
+
 .box2 {
-    position: absolute;
-    height: 250px;
-    color: #c3c3c3;
-    font-weight: normal;
-    font-size: 16px;
-    padding-top: 16px;
-    padding-left: 16px;
-}
-
-/* 旋轉木馬 */
-.allseason {
+    background-image: url(../img/2.png);
+    background-size: 100%;
+    height: 374px;
     width: 390px;
-    height: 250px;
-    height: 100%;
-}
-
-.season {
-    margin-bottom: -50px;
-    width: 390px;
-
-    width: 100%;
-
-}
-
-.role {
-    margin-top: -50px;
-    margin-bottom: -50px;
-    width: 390px;
-    height: 180px;
-    width: 100%;
-    height: 100%;
-}
-
-.roleimg {
-    width: 390px;
-    height: 180px;
-}
-
-.text1h3 {
-    position: absolute;
-    top: 0;
-}
-
-.text1 {
-    position: absolute;
-    bottom: 0;
-}
-
-/* 旋轉木馬 */
-.box4 {
-    position: absolute;
-    /*   background-image: url(../img/4.png);
-    background-size: 100% 100%;
-    width: 390px;
-    height: 180px;
-    display: inline-block;*/
+    margin-bottom: -248px;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 140px;
 }
 
 .flex {
+    margin-top: -30px;
     display: flex;
     width: 390px;
     height: 20px;
@@ -183,55 +153,33 @@ p {
     justify-content: center;
     gap: 10px;
     color: rgb(255, 255, 255);
-    padding-top: 8px;
+}
+
+.box3 {
+    background-image: url(../img/3.png);
+    background-size: 100%;
+    height: 163px;
+    width: 390px;
+    margin-bottom: -125px;
+    padding-top: 225px;
+}
+
+.box4 {
+    background-image: url(../img/4.png);
+    background-size: 100%;
+    height: 296px;
+    width: 390px;
+    margin-bottom: -232px;
+    text-align: center;
+    padding-top: 154px;
 }
 
 .box5 {
-    background-image: url(../img/5.gif);
+    background-image: url(../img/5.png);
+    background-size: 100%;
+    height: 92px;
     width: 390px;
-    background-size: 100% 100%;
-    height: 180px;
-    display: inline-block;
-    padding-top: 135px;
-    padding-left: 314px;
-}
-
-.box6 {
-    background-image: url(../img/index_box6.png);
-    background-size: 100% 100%;
-    width: 390px;
-    height: 60px;
-    display: inline-block;
-    text-align: center;
-    padding-top: 18px;
-}
-
-.box7 {
-    background-image: url(../img/7.png);
-    width: 390px;
-    background-size: 100% 100%;
-    height: 180px;
-    display: inline-block;
-    padding-left: 16px;
-    padding-top: 125px;
-}
-
-.box8 {
-    background-image: url(../img/8.png);
-    width: 390px;
-    background-size: 100% 100%;
-    display: inline-block;
-    height: 180px;
-    text-align: center;
-    padding-top: 48px;
-}
-
-.box8_text {
-    font-size: 15px;
-    font-weight: normal;
-}
-
-.box8h1 {
-    margin-top: -12px;
-    line-height: 60px;
+    text-align: end;
+    margin-bottom: 0;
+    padding-top: 140px;
 }
