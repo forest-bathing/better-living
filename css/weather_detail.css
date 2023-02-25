@@ -78,6 +78,15 @@ nav {
     color: rgb(255, 255, 255);
 }
 
+.background_Matte_Xitou {
+    background-image: url(../img/weather_detail_Matte_Xitou.png);
+    background-size: 100% 100%;
+    width: 390p;
+    height: 700px;
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+}
+
 .box1 {
     display: flex;
     padding-left: 67px;
