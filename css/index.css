@@ -8,7 +8,6 @@ body {
     background-color: #548B6C;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
     width: 390px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
@@ -131,7 +130,7 @@ li {
 }
 
 .icon {
-    margin-bottom: -3px;
+    margin-bottom: 3px;
 }
 
 .box1 {
@@ -181,7 +180,7 @@ li {
     background-size: 100%;
     height: 448px;
     width: 390px;
-    margin-bottom: -232px;
+    margin-bottom: -448px;
     text-align: center;
     padding-top: 154px;
 }
@@ -189,26 +188,18 @@ li {
 .box5 {
     background-image: url(../img/5.png);
     background-size: 100%;
-    height: 232px;
+    height: 448px;
     width: 390px;
     text-align: end;
-    margin-bottom: 0;
-    padding-top: 140px;
-    padding-right: 16px;
-}
-.box5-2{
-    background-image: url(../img/5-2.png);
-    background-size: 100%;
-    height: 232px;
-    width: 390px;
-    text-align: end;
-    margin-bottom: 0;
-    padding-top: 140px;
+    padding-top: 356px;
     padding-right: 16px;
 }
 
-/* 旋轉木馬 */
-.allseason {
-    margin-bottom: -200px;
-    height: 232px;
+.box5-2 {
+    background-image: url(../img/5-2.png);
+    background-size: 100%;
+    height: 448px;
+    width: 390px;
+    padding-top: 356px;
+    padding-left: 16px;
 }
