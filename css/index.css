@@ -1,10 +1,14 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: #548B6C;
-    margin-top: 0;
-    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    padding: 0;
+    margin-bottom: 0;
     width: 390px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
@@ -44,8 +48,9 @@ p {
 nav {
     width: 390px;
     display: flex;
-    height: 275px;
+    height: 207px;
     background-image: url(../img/0.png);
+    background-size: 100% 100%;
     position: absolute;
     position: fixed;
 }
@@ -96,7 +101,7 @@ a {
     position: absolute;
     right: 30px;
     left: 30px;
-    top: 51px;
+    top: 56px;
 }
 
 .menu {
@@ -113,6 +118,10 @@ a {
     padding-right: 16px;
 }
 
+.burgericon {
+    margin-bottom: 28px;
+}
+
 li {
     padding-bottom: 10px;
 }
@@ -122,33 +131,35 @@ li {
 }
 
 .icon {
-    margin-bottom: 3px;
+    margin-bottom: -3px;
 }
 
 .box1 {
     background-image: url(../img/1.png);
     background-size: 100%;
-    height: 164px;
+    height: 469px;
     width: 390px;
+    margin-top: -207px;
     margin-bottom: -125px;
-    padding-top: 349px;
+    padding-top: 305px;
+    padding-left: 30px;
 }
 
 .box2 {
     background-image: url(../img/2.png);
     background-size: 100%;
-    height: 374px;
+    height: 388px;
     width: 390px;
-    margin-bottom: -248px;
+    margin-bottom: -125px;
     text-align: center;
-    padding-top: 140px;
+    padding-top: 144px;
 }
 
 .flex {
-    margin-top: -30px;
+    margin-top: 10px;
     display: flex;
     width: 390px;
-    height: 20px;
+    line-height: 20px;
     text-align: center;
     justify-content: center;
     gap: 10px;
@@ -158,16 +169,17 @@ li {
 .box3 {
     background-image: url(../img/3.png);
     background-size: 100%;
-    height: 163px;
+    height: 388px;
     width: 390px;
     margin-bottom: -125px;
     padding-top: 225px;
+    padding-left: 30px;
 }
 
 .box4 {
     background-image: url(../img/4.png);
     background-size: 100%;
-    height: 296px;
+    height: 448px;
     width: 390px;
     margin-bottom: -232px;
     text-align: center;
@@ -177,9 +189,26 @@ li {
 .box5 {
     background-image: url(../img/5.png);
     background-size: 100%;
-    height: 92px;
+    height: 232px;
     width: 390px;
     text-align: end;
     margin-bottom: 0;
     padding-top: 140px;
+    padding-right: 16px;
+}
+.box5-2{
+    background-image: url(../img/5-2.png);
+    background-size: 100%;
+    height: 232px;
+    width: 390px;
+    text-align: end;
+    margin-bottom: 0;
+    padding-top: 140px;
+    padding-right: 16px;
+}
+
+/* 旋轉木馬 */
+.allseason {
+    margin-bottom: -200px;
+    height: 232px;
 }

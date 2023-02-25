@@ -47,8 +47,10 @@ h2 {
 }
 
 .menu {
-    background-image: url(../img/burger.png);
-    height: 800px;
+    background-image: url(../img/burger_ch.png);
+    background-size: 100% 100%;
+    width: 44px;
+    height:800px;
     position: absolute;
     right: 0;
     margin-top: 0;
@@ -56,8 +58,11 @@ h2 {
     transform: translateX(1000%);
     transition: 0.6s;
     list-style-type: none;
-    padding-left: 16px;
+    padding-left: 41px;
     padding-right: 16px;
+}
+.burgericon{
+    margin-bottom: 28px;
 }
 
 li {
