@@ -40,7 +40,7 @@ a {
     background-image: url(../img/burger_ch.png);
     background-size: 100% 100%;
     width: 44px;
-    height:800px;
+    height: 800px;
     position: absolute;
     right: 0;
     margin-top: 0;
@@ -51,7 +51,8 @@ a {
     padding-left: 41px;
     padding-right: 16px;
 }
-.burgericon{
+
+.burgericon {
     margin-bottom: 28px;
 }
 
@@ -95,4 +96,28 @@ nav {
     margin-right: auto;
     text-align: center;
     line-height: 75px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    overflow: hidden;
+    /* 限定範圍 */
+    width: 195px;
+    outline: none;
+    /* 避免點選會有藍線或虛線 */
+    background:none;
+    position: relative;
+    left: 195px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    /* 設為相對位置，為了前後區塊的絕對位置而設定 */
+    width: 40px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 0px 80px 80px 0px;
+    transition: .3s;
+    /* 點選放大時候的漸變時間 */
 }

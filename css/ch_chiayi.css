@@ -31,6 +31,14 @@ h3 {
     margin-top: 0;
 }
 
+h4 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #FFA900;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 p {
     font-size: 16px;
     font-weight: normal;
@@ -64,7 +72,7 @@ a {
     background-image: url(../img/burger_ch.png);
     background-size: 100% 100%;
     width: 44px;
-    height:800px;
+    height: 844px;
     position: absolute;
     right: 0;
     margin-top: 0;
@@ -75,7 +83,8 @@ a {
     padding-left: 41px;
     padding-right: 16px;
 }
-.burgericon{
+
+.burgericon {
     margin-bottom: 28px;
 }
 
@@ -117,6 +126,7 @@ nav {
 
 .box1 {
     background-image: url(../img/2-1.png);
+    background-size: 100% 100%;
     height: 228px;
     width: 390px;
     margin-bottom: -125px;
@@ -126,6 +136,7 @@ nav {
 
 .box2 {
     background-image: url(../img/2-2.png);
+    background-size: 100% 100%;
     height: 248px;
     width: 390px;
     margin-bottom: -125px;
@@ -134,7 +145,8 @@ nav {
 }
 
 .box3 {
-    background-image: url(../img/2-3.png);
+    background-image: url(../img/2-4.png);
+    background-size: 100% 100%;
     height: 248px;
     width: 390px;
     margin-bottom: -125px;
@@ -143,16 +155,8 @@ nav {
 }
 
 .box4 {
-    background-image: url(../img/2-4.png);
-    height: 248px;
-    width: 390px;
-    margin-bottom: -125px;
-    text-align: center;
-    padding-top: 140px;
-}
-
-.box5 {
-    background-image: url(../img/2-5.png);
+    background-image: url(../img/2-3.png);
+    background-size: 100% 100%;
     height: 248px;
     width: 390px;
     margin-bottom: -125px;
@@ -161,7 +165,8 @@ nav {
 }
 
 .question-btn {
-    background-image: url(../img/2-7.png);
+    background-image: url(../img/2-5.png);
+    background-size: 100% 100%;
     background-color: transparent;
     border: none;
     width: 390px;
@@ -205,10 +210,12 @@ nav {
 
 .question-text {
     display: none;
+    width: 390px;
     padding-top: 75px;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
     margin-bottom: -125px;
     background-color: rgb(255, 255, 255);
+
 }
 
 .questionmtext {
@@ -256,6 +263,17 @@ nav {
 
 .box6 {
     background-image: url(../img/2-6.png);
+    background-size: 100% 100%;
+    height: 248px;
+    width: 390px;
+    margin-bottom: -125px;
+    text-align: center;
+    padding-top: 140px;
+}
+
+.box7 {
+    background-image: url(../img/2-7.png);
+    background-size: 100% 100%;
     height: 248px;
     width: 390px;
     margin-bottom: -125px;
@@ -265,6 +283,7 @@ nav {
 
 .box8 {
     background-image: url(../img/2-8.png);
+    background-size: 100% 100%;
     height: 248px;
     width: 390px;
     margin-bottom: -125px;
@@ -274,10 +293,49 @@ nav {
 
 .box9 {
     background-image: url(../img/2-9.png);
+    background-size: 100% 100%;
     height: 180px;
     width: 390px;
     margin-bottom: 0;
     text-align: center;
     padding-top: 140px;
+}
 
+
+
+
+
+.close {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.infoModal {
+    text-align: center;
+    border: none;
+    border-radius: 14px;
+    width: 270px;
+    height: 274px;
+    background-color: transparent;
+    background-image: url(../img/close.png);
+    background-size: 100%;
+}
+
+.infoModal::-webkit-scrollbar {
+    display: none;
+}
+
+.infoimg {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.info {
+    font-size:13px ;
+    line-height: 18px;
+    color: rgb(255, 255, 255);
 }
