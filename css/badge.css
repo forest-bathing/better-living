@@ -100,7 +100,7 @@ nav {
 }
 
 .badge {
-    width: 100px;
+    width: 96px;
     text-align: center;
     justify-content: center;
     margin-bottom: 50px;
@@ -109,15 +109,13 @@ nav {
 .vertical {
     text-align: center;
     justify-content: center;
-    width: 100px;
     padding-top: 150px;
 }
 
 .show {
-    width: 100px;
-    height: 90px;
     background-color: transparent;
     border: none;
+    margin-left: -2px;
 }
 
 .close {
