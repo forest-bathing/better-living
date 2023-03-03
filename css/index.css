@@ -19,6 +19,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 h1 {
     color: #ffffff;
     font-size: 30px;
@@ -144,6 +148,7 @@ li {
     margin-bottom: -125px;
     padding-top: 305px;
     padding-left: 30px;
+    color: #ffffff;
 }
 
 .box2 {
@@ -175,6 +180,7 @@ li {
     margin-bottom: -125px;
     padding-top: 225px;
     padding-left: 30px;
+    color: #ffffff;
 }
 
 .box4 {

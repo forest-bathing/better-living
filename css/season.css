@@ -96,6 +96,10 @@ nav {
     background-size: 100%;
 }
 
+.bird{
+    background-image: url(../img/season_b.png);
+}
+
 .box2 {
     padding-left: 18px;
     padding-right: 18px;
