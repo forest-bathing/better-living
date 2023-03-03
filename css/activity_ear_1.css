@@ -40,13 +40,27 @@ nav {
 }
 
 .btn {
-    background-color: rgb(126, 195, 255);
+    background-color: rgba(126, 195, 255, 0);
     border: none;
-    color: #00000000;
+    color: #ffffff;
     height: 44px;
     width: 44px;
 }
 
 .Circle {
-    margin-top: 500px;
+    position: absolute;
+    margin-top: 647px;
+    margin-left: 257px;
+}
+
+.triángulo {
+    position: absolute;
+    margin-top: 148px;
+    margin-left: 245px;
+}
+
+.StrokeRect {
+    position: absolute;
+    margin-top: 514px;
+    margin-left: 74px;
 }
