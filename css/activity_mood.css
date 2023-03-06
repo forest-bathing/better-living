@@ -54,6 +54,7 @@ nav {
 .img {
     margin-left: 25px;
     margin-top: 25px;
+    background-color: transparent;
 }
 
 .w {
@@ -66,7 +67,7 @@ nav {
     position: fixed;
     text-align: center;
     line-height: 300px;
-    bottom: -64px;
+    bottom: 0px;
 }
 
 .treeuncle {
