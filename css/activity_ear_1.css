@@ -43,9 +43,20 @@ nav {
 .btn {
     background-color: rgba(126, 195, 255, 0);
     border: none;
-    color: #ffffff;
+    color: transparent;
     height: 44px;
     width: 44px;
+}
+
+.clear {
+    position: absolute;
+    left: -44px;
+    background: none;
+    border: none;
+    color: #00000000;
+    background-image: url(../img/delete.svg);
+    width: 44px;
+    height: 44px;
 }
 
 .Circle {
@@ -64,4 +75,13 @@ nav {
     position: absolute;
     margin-top: 514px;
     margin-left: 74px;
+}
+
+.ds {
+    position: absolute;
+    right: 16px;
+}
+
+.d .s {
+    margin: 0;
 }

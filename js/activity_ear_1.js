@@ -50,3 +50,9 @@ function drawStrokeRect() {
 }
 
 
+function clearAll() {
+    if (canvas.getContext) {
+        let ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, 390, 800);
+    }
+}
