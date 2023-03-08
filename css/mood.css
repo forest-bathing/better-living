@@ -102,8 +102,23 @@ nav {
 #Box1 {
     width: 390px;
     height: 350px;
-   padding-top: 230px;
+    padding-top: 230px;
     /* border:1px #ccc dashed; */
     text-align: center;
-    transform: scale(4.5);
+}
+
+.container{
+
+}
+
+.a1 #element {
+    background-image: url(../img/mood_1.png);
+}
+
+.a2 #element {
+    background-image: url(../img/mood_2.png);
+}
+
+.a2 #element {
+    background-image: url(../img/mood_3.png);
 }
