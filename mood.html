@@ -33,16 +33,14 @@
     </nav>
 
     <div class="box">
-        <div class="start">
+        <div id="Img1" class="start" draggable="true" ondragstart="Drag(event)">
             <h1>0</h1>
         </div>
     </div>
-
-    <div class="myDiv">
-        <input type="range" id="myRange" value="0" min="0" max="100" step="10">
-        <span class="rangeTxt"></span>
-    </div>
     
+    <div id="Box1" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+    </div>         
+
     <script type="text/javascript" src="./js/mood.js"></script>
 
 </body>
