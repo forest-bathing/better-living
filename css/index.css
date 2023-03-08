@@ -12,7 +12,7 @@ body {
     width: 390px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
-    background-color: #5FC080;
+    background-color: #5B8168;
 }
 
 body::-webkit-scrollbar {
@@ -242,4 +242,8 @@ li {
     padding-top: 415px;
     padding-right: 16px;
 }
+
+
+
+
 

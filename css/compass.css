@@ -8,7 +8,7 @@ body {
     text-align: center;
     color: #ffffff;
     background-image: url(../img/background_g.png);
-    background-color: #5FC080;
+    background-color: #5B8168;
 }
 
 h1 {
@@ -55,7 +55,7 @@ a {
 }
 
 .menu {
-    background-image: url(../img/burger_ch.png);
+    background-image: url(../img/burger_compass.png);
     background-size: 100% 100%;
     width: 44px;
     height:800px;
@@ -70,11 +70,10 @@ a {
     padding-right: 16px;
 }
 .burgericon{
-    margin-bottom: 28px;
+    margin-bottom: 36px;
 }
-
-li {
-    padding-bottom: 10px;
+.li {
+    padding-bottom: 16px;
 }
 
 #menu-switcher:checked~.menu {
