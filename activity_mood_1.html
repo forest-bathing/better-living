@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/activity_mood_1.css">
+    <title>樹伯伯的信箱</title>
+</head>
+
+<body>
+    <nav class="sticky-top">
+        <a href="javascript:history.back()">
+            <div class="back">
+                <img src="./img/back.svg" alt="" height="44px" width="44px">
+            </div>
+        </a>
+        <h2>樹伯伯的信箱</h2>
+    </nav>
+    <div class="box">
+        <p class="date">2022 . 11 . 28 </p>
+        <p class="text">現在心情如何呢？</p>
+        <div id="Box1" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+        </div>
+        <div class="w">
+            <div class="treeuncle">
+                <img src="./img/treeuncle1.png" alt="" width="80px">
+                <img id="Img1" src="./img/treeuncle2.png" draggable="true" ondragstart="Drag(event)" width="80px">
+                <img src="./img/treeuncle3.png" alt="" width="80px">
+                <img src="./img/treeuncle4.png" alt="" width="80px">
+                <img src="./img/treeuncle5.png" alt="" width="80px">
+                <img src="./img/treeuncle6.png" alt="" width="80px">
+                <img src="./img/treeuncle7.png" alt="" width="80px">
+                <img src="./img/treeuncle8.png" alt="" width="80px">
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/activity_mood.js"></script>
+</body>
+
+</html>

@@ -6,11 +6,11 @@ function countDown() {
 	count -= 0.01;
 	// 當 count = 0 時跳轉頁面
 	if (count == 0.00) {
-		location.href = "../activity_ear.html";
+		location.href = "./activity_ear.html";
 	}
 	// 設定每秒執行1次
 	setTimeout("countDown()", 500);
 }
 // 執行 countDown
 countDown();
-setTimeout("location.href='../activity_ear.html'", 51000);
+setTimeout("location.href='./activity_ear.html'", 51000);
