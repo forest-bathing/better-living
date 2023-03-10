@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compass Example</title>
+    <style>
+      #compass {
+        width: 200px;
+        height: 200px;
+        background-image: url('compass.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        transform-origin: center center;
+        transform: rotate(0deg);
+      }
+    </style>
+    <script>
+      window.addEventListener("deviceorientation", function(event) {
+        var alpha = event.alpha;
+        var beta = event.beta;
+        var gamma = event.gamma;
+        // Do something with the orientation data
+        var compass = document.getElementById("compass");
+        compass.style.transform = "rotate(" + alpha + "deg)";
+      });
+    </script>
+  </head>
+  <body>
+    <div id="compass"></div>
+  </body>
+</html>
