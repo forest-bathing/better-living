@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compass Example</title>
-    <style>
-      #compass {
-        width: 200px;
-        height: 200px;
-        background-image: url('./img/0.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin: 0 auto;
-        transform-origin: center center;
-        transform: rotate(0deg);
-      }
-    </style>
+<head>
+    <title>Accelerometer Data</title>
+</head>
+<body>
+    <p>X: <span id="x-value"></span></p>
+    <p>Y: <span id="y-value"></span></p>
+    <p>Z: <span id="z-value"></span></p>
+    
     <script>
-      window.addEventListener("deviceorientation", function(event) {
-        var alpha = event.alpha;
-        var beta = event.beta;
-        var gamma = event.gamma;
-        // Do something with the orientation data
-        var compass = document.getElementById("compass");
-        compass.style.transform = "rotate(" + alpha + "deg)";
-      });
+        window.addEventListener("deviceorientation", handleOrientation, true);
+        
+        function handleOrientation(event) {
+            var x = event.beta;  // 前後傾斜（度）
+            var y = event.gamma; // 左右傾斜（度）
+            var z = event.alpha; // 手機方向（度）
+            
+            document.getElementById("x-value").innerHTML = x;
+            document.getElementById("y-value").innerHTML = y;
+            document.getElementById("z-value").innerHTML = z;
+        }
     </script>
-  </head>
-  <body>
-    <div id="compass"></div>
-  </body>
+</body>
 </html>
+
