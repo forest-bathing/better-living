@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
 }
 
 .all {
-margin-left: -16px;
+    margin-left: -16px;
     background-color: #ffffff;
 
 }
@@ -122,6 +122,7 @@ nav {
 }
 
 .heart {
+    margin-left: 16px;
     width: 115px;
     height: 23px;
     margin-top: 10px;
