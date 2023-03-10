@@ -34,7 +34,7 @@ a {
     background-image: url(../img/burger_VR360.png);
     background-size: 100% 100%;
     width: 44px;
-    height: 844px;
+    height: 2800px;
     position: absolute;
     right: 0;
     margin-top: 0;
@@ -47,10 +47,10 @@ a {
 }
 
 .burgericon{
-    margin-bottom: 36px;
+    margin-bottom: 30px;
 }
 .li {
-    padding-bottom: 19px;
+    padding-bottom: 16px;
 }
 
 #menu-switcher:checked~.menu {
