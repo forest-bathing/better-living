@@ -1,17 +1,8 @@
-var count = 1.02;
-function countDown() {
-	// 將秒數寫在指定元素中
-	document.getElementById("timeBox").innerHTML = count;
-	// 每次執行就減1
-	count -= 0.01;
-	// 當 count = 0 時跳轉頁面
-	if (count == 0.00) {
-		location.href = "https://forest-bathing.github.io/better-living/activity_ear.html";
-	}
-	// 設定每秒執行1次
-	setTimeout("countDown()", 500);
-}
-// 執行 countDown
-countDown();
-setTimeout("location.href='https://forest-bathing.github.io/better-living/activity_ear.html'", 51000);
-
+let countdown = 1.02; // 倒數計時的初始值
+let countdownInterval = setInterval(function() {
+  countdown = countdown - 0.01; // 每個時間間隔減少 0.01
+  let countdownDisplay = countdown.toFixed(2); // 將倒數計時格式化為兩位小數的字符串
+  document.getElementById("countdown").textContent = countdownDisplay; // 將格式化後的倒數計時顯示在頁面上
+  if (countdown <= 0) {
+    location.href = "https://forest-bathing.github.io/better-living/activity_ear.html";  }
+}, 50); 
