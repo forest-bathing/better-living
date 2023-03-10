@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>拖曳圓</title>
+	<style type="text/css">
+		canvas {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="myCanvas" width="500" height="500"></canvas>
+	<script type="text/javascript">
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+		var centerX = canvas.width/2;
+		var centerY = canvas.height/2;
+		var radius = 50;
+		var currentDistance = 0;
+		var currentNumber = 0;
+
+		function drawCircle(distance) {
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+			ctx.beginPath();
+			ctx.arc(centerX, centerY, radius + distance, 0, 2*Math.PI);
+			ctx.stroke();
+
+			ctx.font = "30px Arial";
+			ctx.fillStyle = "black";
+			ctx.textAlign = "center";
+			ctx.fillText(currentNumber, centerX, centerY);
+		}
+
+		function getDistance(x, y) {
+			return Math.sqrt(Math.pow(centerX - x, 2) + Math.pow(centerY - y, 2));
+		}
+
+		function getNumber(distance) {
+			return Math.round(distance/10);
+		}
+
+		canvas.addEventListener("mousedown", function(event) {
+			var distance = getDistance(event.clientX, event.clientY) - radius;
+			currentDistance = distance > 0 ? distance : 0;
+			currentNumber = getNumber(currentDistance);
+			drawCircle(currentDistance);
+		});
+
+		canvas.addEventListener("mousemove", function(event) {
+			if (currentDistance > 0) {
+				var distance = getDistance(event.clientX, event.clientY) - radius;
+				currentDistance = distance > 0 ? distance : 0;
+				currentNumber = getNumber(currentDistance);
+				drawCircle(currentDistance);
+			}
+		});
+
+		canvas.addEventListener("mouseup", function(event) {
+			currentDistance = 0;
+			currentNumber = 0;
+			drawCircle(0);
+		});
+
+		drawCircle(0);
+	</script>
+</body>
+</html>
+<!-- 程式碼中使用了HTML5的canvas元素，
+畫出一個初始半徑為50的圓形，然後用
+mousedown、mousemove、mouseup事
+件實現圓形拖曳功能，同時根據拖曳的
+距離計算出數字並在圓形中心顯示。
+當拖曳結束時，數字和圓形回到初始狀態。 -->
