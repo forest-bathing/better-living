@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Accelerometer Data</title>
+  <title>感應手機三軸數值</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <p>X: <span id="x-value"></span></p>
-    <p>Y: <span id="y-value"></span></p>
-    <p>Z: <span id="z-value"></span></p>
-    
-    <script>
-        window.addEventListener("deviceorientation", handleOrientation, true);
-        
-        function handleOrientation(event) {
-            var x = event.beta;  // 前後傾斜（度）
-            var y = event.gamma; // 左右傾斜（度）
-            var z = event.alpha; // 手機方向（度）
-            
-            document.getElementById("x-value").innerHTML = x;
-            document.getElementById("y-value").innerHTML = y;
-            document.getElementById("z-value").innerHTML = z;
-        }
-    </script>
+  <h1>感應手機三軸數值</h1>
+  <div id="x-axis"></div>
+  <div id="y-axis"></div>
+  <div id="z-axis"></div>
+  <script>
+    $(document).ready(function() {
+      if (window.DeviceOrientationEvent) {
+        window.addEventListener('deviceorientation', function(event) {
+          var alpha = event.alpha;
+          var beta = event.beta;
+          var gamma = event.gamma;
+          $('#x-axis').text('X軸：' + alpha);
+          $('#y-axis').text('Y軸：' + beta);
+          $('#z-axis').text('Z軸：' + gamma);
+        }, false);
+      } else {
+        alert('你的手機不支援感應器');
+      }
+    });
+  </script>
 </body>
 </html>
 
