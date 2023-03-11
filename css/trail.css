@@ -159,7 +159,7 @@ button {
     font-weight: bold;
     position: absolute;
     position: fixed;
-    top: 90%;
+    top: 95%;
     z-index: 1000;
     margin-left: -374px;
 }
