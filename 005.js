@@ -1,9 +1,9 @@
 window.addEventListener('deviceorientation', handleOrientation);
 
 function handleOrientation(event) {
-	// var alpha = event.alpha; // 方位角度，從0度到360度
-	// var beta = event.beta; // 前後傾斜角度，從-180度到180度
-	// var gamma = event.gamma; // 左右傾斜角度，從-90度到90度
+	var alpha = event.alpha; // 方位角度，從0度到360度
+	var beta = event.beta; // 前後傾斜角度，從-180度到180度
+	var gamma = event.gamma; // 左右傾斜角度，從-90度到90度
 
 	document.getElementById("values").innerHTML = "方位角度：" + Math.round(alpha) + "°<br>前後傾斜角度：" + Math.round(beta) + "°<br>左右傾斜角度：" + Math.round(gamma) + "°";
 
