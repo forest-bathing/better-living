@@ -4,5 +4,5 @@ let countdownInterval = setInterval(function() {
   let countdownDisplay = countdown.toFixed(2); // 將倒數計時格式化為兩位小數的字符串
   document.getElementById("countdown").textContent = countdownDisplay; // 將格式化後的倒數計時顯示在頁面上
   if (countdown <= 0) {
-    location.href = "https://forest-bathing.github.io/better-living/activity_ear.html";  }
+    location.href = "https://forest-bathing.github.io/better-living/activity_eye.html";  }
 }, 50); 

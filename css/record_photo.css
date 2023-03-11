@@ -52,3 +52,42 @@ nav {
     width: 390px;
     height: 800px;
 }
+
+.background_map{
+    background-image: url(../img/record_map_background.png);
+    background-size: 100%;
+    width: 390px;
+    height: 800px;
+}
+
+.background_mood{
+    background-image: url(../img/background_mood.png);
+    background-size: 100%;
+    width: 390px;
+    height: 800px;
+}
+.date {
+    padding-top: 95px;
+    margin-left: 150px;
+}
+
+.text {
+    margin-left: -200px;
+}
+p {
+    font-size: 20px;
+    color: #ffffff;
+}
+.background_voice{
+    background-image: url(../img/background_voice.png);
+    background-size: 100%;
+    width: 390px;
+    height: 800px;
+}
+
+.background_walk{
+    background-image: url(../img/background_walk.png);
+    background-size: 100%;
+    width: 390px;
+    height: 800px;
+}

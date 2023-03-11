@@ -13,4 +13,4 @@ function countDown() {
 }
 // 執行 countDown
 countDown();
-setTimeout("location.href='../activity_ear_2-1.html'", 30000);
+setTimeout("https://forest-bathing.github.io/better-living/activity_ear_2-1.html", 30000);
