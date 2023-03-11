@@ -1,0 +1,13 @@
+#compass {
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/guide.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+#values {
+    font-size: 24px;
+    margin: auto;
+    text-align: center;
+}
