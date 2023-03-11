@@ -51,6 +51,46 @@ nav {
     z-index: -100;
 }
 
+.background_Matte_hand{
+    background-image: url(../img/guide_hand_Matte_w.png);
+    background-size: 100% 100%;
+    width: 390px;
+    height: 800px;
+    z-index: -100;
+}
+
+.background_Matte_heart{
+    background-image: url(../img/guide_heart_Matte_w.png);
+    background-size: 100% 100%;
+    width: 390px;
+    height: 800px;
+    z-index: -100;
+}
+
+.background_Matte_eye{
+    background-image: url(../img/guide_eye_Matte_w.png);
+    background-size: 100% 100%;
+    width: 390px;
+    height: 800px;
+    z-index: -100;
+}
+
+.background_Matte_nose{
+    background-image: url(../img/guide_nose_c_Matte_w.png);
+    background-size: 100% 100%;
+    width: 390px;
+    height: 800px;
+    z-index: -100;
+}
+
+.background_Matte_nose_d{
+    background-image: url(../img/guide_nose_d_Matte_w.png);
+    background-size: 100% 100%;
+    width: 390px;
+    height: 800px;
+    z-index: -100;
+}
+
 .background {
     background-image: url(../img/guide_ear.png);
     background-size: 100% 100%;

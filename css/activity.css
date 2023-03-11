@@ -70,6 +70,42 @@ nav {
     margin-right: auto;
 }
 
+.round2 {
+    background-image: url(../img/activity_ear2_round.png);
+    background-size: 100% 100%;
+    width: 276px;
+    height: 276px;
+    border: 12px solid rgb(255, 255, 255);
+    border-radius: 300px 300px 300px 300px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.round_mood {
+    background-image: url(../img/activity_mood_round.png);
+    background-size: 100% 100%;
+    width: 276px;
+    height: 276px;
+    border: 12px solid rgb(255, 255, 255);
+    border-radius: 300px 300px 300px 300px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.round_eye {
+    background-image: url(../img/activity_eye_round.png);
+    background-size: 100% 100%;
+    width: 276px;
+    height: 276px;
+    border: 12px solid rgb(255, 255, 255);
+    border-radius: 300px 300px 300px 300px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 button {
     background-color: #548B6C;
     border: none;
