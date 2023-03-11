@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>手機感應三軸羅盤</title>
+  <title>網頁指北針</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
@@ -30,7 +30,7 @@
   </style>
 </head>
 <body>
-  <h1>手機感應三軸羅盤</h1>
+  <h1>網頁指北針</h1>
   <div class="compass">
     <div class="needle"></div>
   </div>
@@ -40,12 +40,10 @@
       if (window.DeviceOrientationEvent) {
         window.addEventListener('deviceorientation', function(event) {
           var alpha = event.alpha;
-          var beta = event.beta;
-          var gamma = event.gamma;
           var compass = document.querySelector('.compass');
           var needle = document.querySelector('.needle');
           var heading = document.querySelector('.heading');
-          compass.style.transform = 'rotateZ(' + (-alpha) + 'deg) rotateX(' + (-beta) + 'deg) rotateY(' + (-gamma) + 'deg)';
+          needle.style.transform = 'translateX(-50%) rotateZ(' + (-alpha) + 'deg)';
           var direction = '';
           if (alpha >= 0 && alpha < 45) {
             direction = 'N';
