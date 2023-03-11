@@ -106,6 +106,42 @@ nav {
     margin-right: auto;
 }
 
+.round_nose{
+    background-image: url(../img/activity_nose_round.png);
+    background-size: 100% 100%;
+    width: 276px;
+    height: 276px;
+    border: 12px solid rgb(255, 255, 255);
+    border-radius: 300px 300px 300px 300px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.round_nose1{
+    background-image: url(../img/activity_nose1_round.png);
+    background-size: 100% 100%;
+    width: 276px;
+    height: 276px;
+    border: 12px solid rgb(255, 255, 255);
+    border-radius: 300px 300px 300px 300px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.round_hand{
+    background-image: url(../img/activity_hand_round.png);
+    background-size: 100% 100%;
+    width: 276px;
+    height: 276px;
+    border: 12px solid rgb(255, 255, 255);
+    border-radius: 300px 300px 300px 300px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 button {
     background-color: #548B6C;
     border: none;

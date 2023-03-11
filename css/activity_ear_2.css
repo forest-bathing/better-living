@@ -61,6 +61,28 @@ h1 {
     right: 10px;
 }
 
+.smell{
+    position: absolute;
+    right: -170px;
+}
+
+.smell2{
+    position: absolute;
+    top: -100px;
+    right: -170px;
+}
+.touch{
+    position: absolute;
+    top: -100px;
+    right: -100px;
+}
+p{
+    width: 326px;
+    color: #91978B;
+    margin-top: 158px;
+    margin-left: 32px;
+}
+
 .ear {
     position: absolute;
     margin-top: 120px;
