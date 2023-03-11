@@ -49,55 +49,57 @@
 // });
 
 
+// //拖曳圓(圓會動)
+// // 取得HTML元素
+// const circle = document.getElementById("circle");
+// const number = document.getElementById("number");
+
+// // 設定圓形中心點的初始位置及數字初始值
+// let centerX = window.innerWidth / 2;
+// let centerY = window.innerHeight / 2;
+// let num = 0;
+
+// // 設定圓形拖曳事件
+// circle.addEventListener("mousedown", startDrag);
+
+// // 開始拖曳時的函式
+// function startDrag(event) {
+//   document.addEventListener("mousemove", drag);
+//   document.addEventListener("mouseup", stopDrag);
+// }
+
+// // 拖曳中的函式
+// function drag(event) {
+//   // 計算拖曳距離
+//   const distance = Math.sqrt(Math.pow(event.clientX - centerX, 2) + Math.pow(event.clientY - centerY, 2));
+  
+//   // 更新圓形中心點位置
+//   circle.style.top = `${event.clientY - distance}px`;
+//   circle.style.left = `${event.clientX - distance}px`;
+  
+//   // 計算數字
+//   num = Math.round(distance / 10);
+  
+//   // 更新顯示的數字
+//   number.innerText = num;
+// }
+
+// // 結束拖曳時的函式
+// function stopDrag(event) {
+//   document.removeEventListener("mousemove", drag);
+//   document.removeEventListener("mouseup", stopDrag);
+  
+//   // 重置圓形中心點位置
+//   circle.style.top = "50%";
+//   circle.style.left = "50%";
+  
+//   // 重置數字
+//   num = 0;
+//   number.innerText = num;
+// }
+
+
 //*圓向外拉數字變大
-// 取得HTML元素
-const circle = document.getElementById("circle");
-const number = document.getElementById("number");
-
-// 設定圓形中心點的初始位置及數字初始值
-let centerX = window.innerWidth / 2;
-let centerY = window.innerHeight / 2;
-let num = 0;
-
-// 設定圓形拖曳事件
-circle.addEventListener("mousedown", startDrag);
-
-// 開始拖曳時的函式
-function startDrag(event) {
-  document.addEventListener("mousemove", drag);
-  document.addEventListener("mouseup", stopDrag);
-}
-
-// 拖曳中的函式
-function drag(event) {
-  // 計算拖曳距離
-  const distance = Math.sqrt(Math.pow(event.clientX - centerX, 2) + Math.pow(event.clientY - centerY, 2));
-  
-  // 更新圓形中心點位置
-  circle.style.top = `${event.clientY - distance}px`;
-  circle.style.left = `${event.clientX - distance}px`;
-  
-  // 計算數字
-  num = Math.round(distance / 10);
-  
-  // 更新顯示的數字
-  number.innerText = num;
-}
-
-// 結束拖曳時的函式
-function stopDrag(event) {
-  document.removeEventListener("mousemove", drag);
-  document.removeEventListener("mouseup", stopDrag);
-  
-  // 重置圓形中心點位置
-  circle.style.top = "50%";
-  circle.style.left = "50%";
-  
-  // 重置數字
-  num = 0;
-  number.innerText = num;
-}拖曳圓(圓會動)
-
 // 取得canvas元素
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
