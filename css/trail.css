@@ -157,8 +157,9 @@ button {
     border-radius: 30px;
     font-size: 20px;
     font-weight: bold;
+    position: absolute;
     position: fixed;
-    margin-top: 716px;
+    top: 90%;
     z-index: 1000;
     margin-left: -374px;
 }
