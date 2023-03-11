@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>感應手機三軸數值</title>
+  <title>手機羅盤</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+    .compass {
+      width: 300px;
+      height: 300px;
+      border: 5px solid black;
+      border-radius: 50%;
+      position: relative;
+    }
+    .compass .needle {
+      width: 10px;
+      height: 150px;
+      border: 5px solid black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform-origin: 50% 0%;
+      transform: translateX(-50%) rotateZ(0deg);
+    }
+    .heading {
+      margin-top: 20px;
+      font-size: 24px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>感應手機三軸數值</h1>
-  <div id="x-axis"></div>
-  <div id="y-axis"></div>
-  <div id="z-axis"></div>
+  <h1>手機羅盤</h1>
+  <div class="compass">
+    <div class="needle"></div>
+  </div>
+  <div class="heading">方向：N</div>
   <script>
     $(document).ready(function() {
       if (window.DeviceOrientationEvent) {
         window.addEventListener('deviceorientation', function(event) {
           var alpha = event.alpha;
-          var beta = event.beta;
-          var gamma = event.gamma;
-          $('#x-axis').text('X軸：' + alpha);
-          $('#y-axis').text('Y軸：' + beta);
-          $('#z-axis').text('Z軸：' + gamma);
+          var compass = document.querySelector('.compass');
+          var needle = document.querySelector('.needle');
+          var heading = document.querySelector('.heading');
+          compass.style.transform = 'rotateZ(' + (-alpha) + 'deg)';
+          var direction = '';
+          if (alpha >= 0 && alpha < 45) {
+            direction = 'N';
+          } else if (alpha >= 45 && alpha < 90) {
+            direction = 'NE';
+          } else if (alpha >= 90 && alpha < 135) {
+            direction = 'E';
+          } else if (alpha >= 135 && alpha < 180) {
+            direction = 'SE';
+          } else if (alpha >= 180 && alpha < 225) {
+            direction = 'S';
+          } else if (alpha >= 225 && alpha < 270) {
+            direction = 'SW';
+          } else if (alpha >= 270 && alpha < 315) {
+            direction = 'W';
+          } else if (alpha >= 315 && alpha < 360) {
+            direction = 'NW';
+          }
+          heading.innerHTML = '方向：' + direction;
         }, false);
       } else {
         alert('你的手機不支援感應器');
