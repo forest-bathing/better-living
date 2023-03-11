@@ -9,7 +9,7 @@ var centerX = canvas.width/2;
 var centerY = canvas.height/2;
 var radius = 50;
 var fontSize = 24;
-var maxRadius = 150;
+var maxRadius = 150;0
 var minRadius = 50;
 
 // 定義圓形的初始值
