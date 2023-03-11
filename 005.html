@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>手機羅盤</title>
+  <title>手機感應三軸羅盤</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
@@ -30,20 +30,22 @@
   </style>
 </head>
 <body>
-  <h1>手機羅盤</h1>
+  <h1>手機感應三軸羅盤</h1>
   <div class="compass">
     <div class="needle"></div>
   </div>
-  <div class="heading">方向：N</div>
+  <div class="heading">方位：N</div>
   <script>
     $(document).ready(function() {
       if (window.DeviceOrientationEvent) {
         window.addEventListener('deviceorientation', function(event) {
           var alpha = event.alpha;
+          var beta = event.beta;
+          var gamma = event.gamma;
           var compass = document.querySelector('.compass');
           var needle = document.querySelector('.needle');
           var heading = document.querySelector('.heading');
-          compass.style.transform = 'rotateZ(' + (-alpha) + 'deg)';
+          compass.style.transform = 'rotateZ(' + (-alpha) + 'deg) rotateX(' + (-beta) + 'deg) rotateY(' + (-gamma) + 'deg)';
           var direction = '';
           if (alpha >= 0 && alpha < 45) {
             direction = 'N';
@@ -62,7 +64,7 @@
           } else if (alpha >= 315 && alpha < 360) {
             direction = 'NW';
           }
-          heading.innerHTML = '方向：' + direction;
+          heading.innerHTML = '方位：' + direction;
         }, false);
       } else {
         alert('你的手機不支援感應器');
@@ -71,4 +73,3 @@
   </script>
 </body>
 </html>
-
