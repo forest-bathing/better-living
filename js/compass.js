@@ -5,7 +5,7 @@ function handleOrientation(event) {
 	var beta = event.beta; // 前後傾斜角度，從-180度到180度
 	var gamma = event.gamma; // 左右傾斜角度，從-90度到90度
 
-	document.getElementById("values").innerHTML = Math.round(alpha)  ;
+	document.getElementById("values").innerHTML =  Math.round(gamma) + "°";
 
 	var compass = document.getElementById("compass");
 	if (alpha !== null) {
