@@ -252,6 +252,7 @@ nav {
     position: fixed;
     top: 90%;
     z-index: 1000;
+    margin-left: -179px;
 }
 
 .box6 {
