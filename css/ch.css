@@ -181,6 +181,7 @@ nav {
 .text {
     width: 354px;
     line-height: 34px;
+    text-align: start;
 }
 
 .trailimg {
@@ -199,11 +200,13 @@ nav {
 .trail {
     display: flex;
     margin-top: 20px;
+    text-align: start;
 }
 
 .question-text {
     display: none;
     width: 100%;
+    text-align: center;
     padding-top: 75px;
     padding-bottom: 120px;
     margin-bottom: -125px;
@@ -211,9 +214,6 @@ nav {
 
 }
 
-.questionmtext {
-    padding-left: 18px;
-}
 
 .minus-icon {
     display: none;
@@ -252,6 +252,7 @@ nav {
     position: fixed;
     top: 90%;
     z-index: 1000;
+    left: 12%;
 }
 
 .box6 {
