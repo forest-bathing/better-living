@@ -64,7 +64,7 @@ a {
     background-image: url(../img/burger_ch.png);
     background-size: 100% 100%;
     width: 44px;
-    height:2800px;
+    height: 2800px;
     position: absolute;
     right: 0;
     margin-top: 0;
@@ -75,9 +75,11 @@ a {
     padding-left: 41px;
     padding-right: 16px;
 }
-.burgericon{
+
+.burgericon {
     margin-bottom: 36px;
 }
+
 .li {
     padding-bottom: 16px;
 }
@@ -101,6 +103,7 @@ nav {
 .back {
     padding-left: 16px;
 }
+
 /*nav*/
 .flex {
     margin-top: -30px;
