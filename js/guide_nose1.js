@@ -7,3 +7,5 @@ let countdownInterval = setInterval(function () {
     location.href = "https://forest-bathing.github.io/better-living/activity_nose1.html";
   }
 }, 50); 
+
+setTimeout("location.href='https://forest-bathing.github.io/better-living/activity_nose1.html'", 5100);
