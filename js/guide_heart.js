@@ -1,3 +1,6 @@
+setTimeout("https://forest-bathing.github.io/better-living/activity_ear.html", 3000);
+
+
 let countdown = 1.02; // 倒數計時的初始值
 let countdownInterval = setInterval(function () {
   countdown = countdown - 0.01; // 每個時間間隔減少 0.01
@@ -7,3 +10,7 @@ let countdownInterval = setInterval(function () {
     location.href = "https://forest-bathing.github.io/better-living/activity_mood.html";
   }
 }, 50); 
+
+
+
+

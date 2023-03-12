@@ -6,3 +6,7 @@ let countdownInterval = setInterval(function() {
   if (countdown <= -0.00) {
     location.href = "https://forest-bathing.github.io/better-living/activity_ear.html";  }
 }, 50); 
+
+
+
+setTimeout("https://forest-bathing.github.io/better-living/activity_ear.html", 3000);
