@@ -3,7 +3,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    width: 390px;
+
+    width: 100%;
     height: 800px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #5B8168;
@@ -21,7 +22,7 @@ nav {
     position: absolute;
     z-index: 10000;
     position: fixed;
-    width: 390px;
+    width: 100%;
     display: flex;
     height: 56px;
     font-size: 20px;
@@ -92,7 +93,7 @@ p{
 .w {
     background-image: url(../img/background_w.png);
     background-size: 100%;
-    width: 390px;
+    width: 100%;
     height: 316px;
     position: absolute;
     z-index: 10000;
