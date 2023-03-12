@@ -236,8 +236,8 @@ li {
 }
 
 .box5-5 {
-    background-image: url(../img/5-5.png);
-    background-size: 100%;
+    background-image: url(../img/5-5.svg);
+    background-size: cover;
     height: 448px;
     width: 100%;
     text-align: end;
