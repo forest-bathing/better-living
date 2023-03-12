@@ -151,7 +151,9 @@ button {
     border-radius: 30px;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 16px;
+    margin-left: -179px;
+    left: 50%;
+    right: 50%;
     position: fixed;
     top: 90%;
     z-index: 1000;

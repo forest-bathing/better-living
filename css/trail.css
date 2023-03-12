@@ -148,6 +148,20 @@ nav {
     margin-top: 0;
 }
 
+.bottom{
+    background-color: #548B6C;
+    border: none;
+    color: rgb(255, 255, 255);
+    width: 358px;
+    height: 48px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 92%;
+    z-index: 1000;
+    margin-left: -358px;
+}
 button {
     background-color: #548B6C;
     border: none;
@@ -157,9 +171,10 @@ button {
     border-radius: 30px;
     font-size: 20px;
     font-weight: bold;
-    position: absolute;
+    margin-left: -179px;
+    left: 50%;
+    right: 50%;
     position: fixed;
-    top: 92%;
+    top: 90%;
     z-index: 1000;
-    margin-left: -374px;
 }
