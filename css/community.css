@@ -115,7 +115,7 @@ nav {
 
 .all {
     padding-left: 16px;
-    padding-right: 16px;
+
     display: flex;
     justify-content: space-between;
 }
@@ -133,4 +133,5 @@ nav {
 .GPS {
     margin-top: 15px;
     margin-left: 16px;
+    margin-right: 16px;
 }
