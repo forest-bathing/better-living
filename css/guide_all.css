@@ -1,6 +1,6 @@
 #compass {
-    width: 200px;
-    height: 200px;
+    width: 307.42px;
+    height: 307px;
     background-image: url("../img/guide.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -10,5 +10,5 @@
     font-size: 24px;
     margin: auto;
     text-align: center;
-    color: #000;
+    color: #00000000;
 }
