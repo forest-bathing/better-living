@@ -114,12 +114,6 @@ nav {
     margin-top: 180px;
 }
 
-.compassimg {
-    position: absolute;
-    left: 50px;
-    top: 209px;
-}
-
 #compass {
     width: 307.42px;
     height: 292px;
@@ -127,7 +121,7 @@ nav {
     background-repeat: no-repeat;
     background-size: contain;
     margin: auto;
-
+    margin-top: -150px;
 }
 
 #values {
