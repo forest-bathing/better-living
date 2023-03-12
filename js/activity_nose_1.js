@@ -6,7 +6,7 @@ function countDown() {
 	count -= 1;
 	// 當 count = 0 時跳轉頁面
 	if (count == 0.00) {
-		location.href = "../activity_nose_1-1.html";
+		location.href = "https://forest-bathing.github.io/better-living/activity_nose_1-1.html";
 	}
 	// 設定每秒執行1次
 	setTimeout("countDown()", 500);
