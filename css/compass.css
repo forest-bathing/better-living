@@ -58,7 +58,7 @@ a {
     background-image: url(../img/burger_compass.png);
     background-size: 100% 100%;
     width: 44px;
-    height:2800px;
+    height: 2800px;
     position: absolute;
     right: 0;
     margin-top: 0;
@@ -69,9 +69,11 @@ a {
     padding-left: 41px;
     padding-right: 16px;
 }
-.burgericon{
+
+.burgericon {
     margin-bottom: 30px;
 }
+
 .li {
     padding-bottom: 16px;
 }
@@ -101,7 +103,7 @@ nav {
     height: 520px;
     background-size: 100% 100%;
     padding-top: 280px;
-    
+
 }
 
 .np {
@@ -114,6 +116,25 @@ nav {
 
 .compassimg {
     position: absolute;
-left: 50px;
+    left: 50px;
     top: 209px;
+}
+
+#compass {
+    width: 307.42px;
+    height: 292px;
+    background-image: url("../img/compass_1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+
+}
+
+#values {
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: normal;
+    margin-top: -180px;
 }

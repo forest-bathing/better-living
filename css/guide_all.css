@@ -1,10 +1,11 @@
 #compass {
     width: 307.42px;
-    height: 307px;
-    background-image: url("../img/guide.svg");
+    height: 292px;
+    background-image: url("../img/compass_1.svg");
     background-repeat: no-repeat;
     background-size: contain;
     margin: auto;
+    
 }
 #values {
     font-size: 24px;
