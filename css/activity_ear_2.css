@@ -63,7 +63,7 @@ h1 {
 
 .smell{
     position: absolute;
-    right: -180px;
+    right: -60px;
 }
 
 .smell2{
@@ -73,8 +73,8 @@ h1 {
 }
 .touch{
     position: absolute;
-    top: -100px;
-    right: -100px;
+    top: -80px;
+    right: 52px;
 }
 p{
     width: 326px;
