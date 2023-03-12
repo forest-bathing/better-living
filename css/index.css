@@ -59,12 +59,13 @@ nav {
     background-size: 100% 100%;
     position: absolute;
     position: fixed;
+    justify-content: space-between;
 }
 
 .weather {
     display: flex;
     padding-left: 16px;
-    width: 78px;
+    width: 134px;
     height: 56px;
     line-height: 3px;
     text-decoration: none;
@@ -85,8 +86,8 @@ nav {
     line-height: 50px;
 }
 
-.logo {
-    margin-left: 42px;
+.no{
+    width: 134px;
 }
 
 a {
