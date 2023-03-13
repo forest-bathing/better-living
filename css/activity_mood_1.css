@@ -4,7 +4,6 @@ body {
     margin-right: auto;
     padding: 0;
     width: 100%;
-
     height: 800px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow: hidden;
@@ -78,12 +77,17 @@ nav {
 }
 
 .treeuncle {
+    margin-top: 6%;
     margin-left: 16px;
-
     white-space: nowrap;
     /*不換行*/
     overflow-y: auto;
     /*可滑動*/
+}
+
+.flex{
+    flex-direction:column;
+    height: 101px;
 }
 
 #Box1 {
