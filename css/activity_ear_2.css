@@ -3,7 +3,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-
     width: 100%;
     height: 800px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -62,22 +61,27 @@ h1 {
     right: 10px;
 }
 
-.smell{
+.smell {
     position: absolute;
-    right: -60px;
+    top: 2%;
+    right: 50%;
+    left: 50%;
+    margin-left: -250px;
 }
 
-.smell2{
+.smell2 {
     position: absolute;
     top: -100px;
     right: -180px;
 }
-.touch{
+
+.touch {
     position: absolute;
     top: -80px;
     right: 52px;
 }
-p{
+
+p {
     width: 326px;
     color: #91978B;
     margin-top: 158px;
