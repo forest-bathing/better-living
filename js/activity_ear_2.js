@@ -9,7 +9,7 @@ function countDown() {
 		location.href = "https://forest-bathing.github.io/better-living/activity_ear_2-1.html";
 	}
 	// 設定每秒執行1次
-	setTimeout("countDown()", 500);
+	setTimeout("countDown()", 50);
 }
 // 執行 countDown
 countDown();
