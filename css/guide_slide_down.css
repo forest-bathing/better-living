@@ -73,7 +73,7 @@ nav {
 .background_Matte {
     background-image: url(../img/sunset_m.png);
     background-size: 100% 100%;
-    width: 390p;
+    width: 100%;
     height: 700px;
     padding-top: 100px;
     color: rgb(255, 255, 255);
@@ -101,7 +101,6 @@ nav {
 }
 
 .box4 {
-
     justify-content: space-between;
     margin-top: 20;
     margin-bottom: 142px;
