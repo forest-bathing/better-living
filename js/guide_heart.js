@@ -9,9 +9,9 @@ let countdownInterval = setInterval(function () {
   if (countdown == -0.00) {
     location.href = "https://forest-bathing.github.io/better-living/activity_mood.html";
   }
-}, 50); 
+}, 50);
 
-setTimeout("location.href='https://forest-bathing.github.io/better-living/activity_mood.html'", 5100);
+setTimeout("location.href='https://forest-bathing.github.io/better-living/activity_mood.html'", 5200);
 
 
 

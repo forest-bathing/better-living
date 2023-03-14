@@ -10,4 +10,4 @@ let countdownInterval = setInterval(function () {
 }, 50);
 
 
-setTimeout("location.href='https://forest-bathing.github.io/better-living/activity_eye.html'", 5100);
+setTimeout("location.href='https://forest-bathing.github.io/better-living/activity_eye.html'", 5200);
