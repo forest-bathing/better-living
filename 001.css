@@ -1,4 +1,4 @@
-/* .slider {
+.slider {
     position: relative;
   }
   
@@ -11,7 +11,10 @@
   
   .active {
     display: block;
-  } 輪播*/
+  } 
+  /*輪播*/
+
+
   /* #box {
     width: 100px;
     height: 100px;
@@ -22,7 +25,9 @@
     cursor: move;
   }拖曳 */
  
-  #container {
+
+
+  /* #container {
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -48,4 +53,4 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-   /* 拖曳圓(圓會動) */
+   拖曳圓(圓會動) */

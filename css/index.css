@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -86,8 +86,8 @@ nav {
     line-height: 50px;
 }
 
-.no{
-        width: 134px;
+.no {
+    width: 134px;
 }
 
 a {
@@ -244,8 +244,6 @@ li {
     padding-top: 415px;
     padding-right: 16px;
 }
-
-
 
 
 
