@@ -2,16 +2,9 @@
 <html>
 
 <head>
-	<title>輪播圓</title>
+<link rel="stylesheet" href="./css/index.css">
+	<title>好好森活</title>
 	<style>
-		body {
-			width: 390px;
-			box-sizing: border-box;
-			font-family: Arial, Helvetica, sans-serif;
-			padding: 0;
-			margin: 0;
-		}
-
 		.slider {
 			position: relative;
 		}
@@ -27,53 +20,29 @@
 			display: block;
 		}
 
-		h1 {
-			color: #ffffff;
-			font-size: 30px;
-			font-weight: bold;
-		}
-
-		p {
-			font-size: 16px;
-			font-weight: normal;
-			color: rgb(255, 255, 255);
-		}
-
-		.box {
+		.box0 {
 			width: 390px;
-			height: 258px;
-			padding-top: 130px;
+			height: 388px;
+			padding-top: 150px;
 			background-size: 100% 100%;
 			position: absolute;
 			text-align: center;
 			color: #ffffff;
 		}
 
-		.box2 {
+		.box2-0 {
 			background-image: url(./img/2-6.png);
 			background-size: 100% 100%;
 		}
 
-		.box3 {
+		.box3-0 {
 			background-image: url(./img/2-7.png);
 			background-size: 100% 100%;
 		}
 
-		.box4 {
+		.box4-0 {
 			background-image: url(./img/2-8.png);
 			background-size: 100% 100%;
-		}
-
-
-		.flex {
-			margin-top: -10px;
-			display: flex;
-			width: 100%;
-			line-height: 20px;
-			text-align: center;
-			justify-content: center;
-			gap: 10px;
-			color: rgb(255, 255, 255);
 		}
 	</style>
 </head>
@@ -82,7 +51,7 @@
 
 	<div class="slider">
 		<div class="slide active">
-			<div class="box box2">
+			<div class="box0 box2-0">
 				<h1>屏東 · 雙溪</h1>
 				<div class="flex">
 					<p><img src="./img/phytoncine.svg" alt="" class="icon"> 12880 ppd</p>
@@ -93,21 +62,21 @@
 
 		</div>
 		<div class="slide">
-			<div class="box box3">
+			<div class="box0 box3-0">
 				<h1>台東 · 知本</h1>
 				<div class="flex">
-					<p><img src="./img/phytoncine.svg" alt=""> 10420 ppd</p>
-					<p><img src="./img/negative ions.svg" alt=""> 11580 ions/cm³</p>
-					<p><img src="./img/weather-1.svg" alt=""> 15 °C</p></div>
+					<p><img src="./img/phytoncine.svg" alt="" class="icon"> 10420 ppd</p>
+					<p><img src="./img/negative ions.svg" alt="" class="icon"> 11580 ions/cm³</p>
+					<p><img src="./img/weather-1.svg" alt="" class="icon"> 15 °C</p></div>
 			</div>
 		</div>
 		<div class="slide">
-			<div class="box box4">
+			<div class="box0 box4-0">
 				<h1>花蓮 · 富源</h1>
 				<div class="flex">
-					<p><img src="./img/phytoncine.svg" alt=""> 10440 ppd</p>
-					<p><img src="./img/negative ions.svg" alt=""> 11520 ions/cm³</p>
-					<p><img src="./img/weather-1.svg" alt=""> 16 °C</p>
+					<p><img src="./img/phytoncine.svg" alt="" class="icon"> 10440 ppd</p>
+					<p><img src="./img/negative ions.svg" alt="" class="icon"> 11520 ions/cm³</p>
+					<p><img src="./img/weather-1.svg" alt="" class="icon"> 16 °C</p>
 				 </div>
 			</div>
 		</div>

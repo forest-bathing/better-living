@@ -247,3 +247,46 @@ li {
 
 
 
+
+/*
+.slider {
+    position: relative;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.active {
+    display: block;
+}
+
+.box0 {
+    width: 390px;
+    height: 388px;
+    padding-top: 150px;
+    background-size: 100% 100%;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+}
+
+.box2-0 {
+    background-image: url(./img/2-6.png);
+    background-size: 100% 100%;
+}
+
+.box3-0 {
+    background-image: url(./img/2-7.png);
+    background-size: 100% 100%;
+}
+
+.box4-0 {
+    background-image: url(./img/2-8.png);
+    background-size: 100% 100%;
+}
+
+*/
