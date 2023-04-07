@@ -188,6 +188,7 @@ li {
     height: 388px;
     width: 100%;
     margin-bottom: -125px;
+    margin-top: -125px;
     padding-top: 225px;
     padding-left: 30px;
     color: #ffffff;
@@ -285,7 +286,7 @@ li {
     text-align: center;
     color: #ffffff;
     position: relative;
-    margin-bottom: -200px;
+
 }
 
 .fade-slider .slides .box0 {
