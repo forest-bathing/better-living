@@ -43,8 +43,8 @@ nav {
     padding-left: 16px;
 }
 
-.background_Matte {
-    background-image: url(../img/guide_ear_Matte_w.png);
+.background_Matte_all {
+    background-image: url(../img/guide_ear_all.png);
     background-size: 100% 100%;
     width: 100%;
     z-index: -100;
