@@ -1,13 +1,18 @@
-const slides = document.querySelectorAll(".slide");
-const slider = document.querySelector(".slider");
+let fadeSlideIndex = 0;
+const fadeSlides = document.querySelectorAll(".fade-slider .slides .box0");
 
-let currentSlide = 0;
-slides[currentSlide].classList.add("active");
 
-function nextSlide() {
-  slides[currentSlide].classList.remove("active");
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].classList.add("active");
+function fadeSlide() {
+  if (fadeSlideIndex >= fadeSlides.length) {
+    fadeSlideIndex = 0;
+  }
+  fadeSlides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  fadeSlides[fadeSlideIndex].classList.add("active");
+  fadeSlideIndex++;
 }
 
-setInterval(nextSlide, 4000);
+
+setInterval(fadeSlide, 3000);
+
