@@ -139,7 +139,6 @@ nav {
     overflow: hidden;
 }
 
-
 .background_Matte_all{
     background-image: url(../img/guide_ear_all.png);
     background-size: 100% 100%;
@@ -148,13 +147,11 @@ nav {
     padding-top: 167px;
 }
 
-
 #compass {
     width: 307.42px;
     height: 292px;
     background-image: url("../img/guide.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
     margin: auto;
 }
 
