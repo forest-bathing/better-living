@@ -284,16 +284,15 @@ li {
     position: absolute;
     text-align: center;
     color: #ffffff;
-  position: relative;
+    position: relative;
+    margin-bottom: -125px;
 }
 
 .fade-slider .slides .box0 {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .fade-slider .slides .box0.active {
-  opacity: 1;
+    opacity: 1;
 }
-
-
