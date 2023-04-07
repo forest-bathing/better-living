@@ -45,7 +45,7 @@ a {
     background-image: url(../img/burger_record.png);
     background-size: 100% 100%;
     width: 44px;
-    height:2800px;
+    height: 2800px;
     position: absolute;
     right: 0;
     margin-top: 0;
@@ -56,7 +56,8 @@ a {
     padding-left: 41px;
     padding-right: 16px;
 }
-.burgericon{
+
+.burgericon {
     margin-bottom: 28px;
 }
 
@@ -78,22 +79,24 @@ nav {
     height: 56px;
     font-size: 20px;
     color: #ffffff;
-
 }
 
 .back {
     padding-left: 16px;
 }
-.all{
+
+.all {
     background-color: #ffffff;
 }
+
 .box1 {
     width: 100%;
     padding-left: 16px;
     padding-top: 44px;
 }
 
-.box2 ,.box3 {
+.box2,
+.box3 {
     width: 100%;
     padding-left: 16px;
 }
