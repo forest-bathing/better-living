@@ -4,8 +4,8 @@ let countdownInterval = setInterval(function () {
   let countdownDisplay = countdown.toFixed(2); // 將倒數計時格式化為兩位小數的字符串
   document.getElementById("countdown").textContent = countdownDisplay; // 將格式化後的倒數計時顯示在頁面上
   if (countdown == -0.00) {
-    location.href = "https://forest-bathing.github.io/better-living/activity_nose1.html";
+    location.href = "https://forest-bathing.github.io/better-living/activity_nose.html";
   }
 }, 50);
 
-setTimeout("location.href='https://forest-bathing.github.io/better-living/activity_nose1.html'", 5200);
+setTimeout("location.href='https://forest-bathing.github.io/better-living/activity_nose.html'", 5200);
