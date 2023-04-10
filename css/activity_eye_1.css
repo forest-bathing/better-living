@@ -48,3 +48,9 @@ h1 {
     background-size: 100% 100%;
     height: 800px;
 }
+
+.box-1-2 {
+    background-image: url(../img/activity_ear_1_background1-2.png);
+    background-size: 100% 100%;
+    height: 800px;
+}
