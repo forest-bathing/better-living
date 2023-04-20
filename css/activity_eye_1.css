@@ -34,7 +34,11 @@ nav {
 .back {
     padding-left: 16px;
 }
+.s {
+    position: absolute;
+    right: 16px;
 
+}
 h1 {
     font-size: 50px;
     color: #548B6C;
@@ -54,7 +58,6 @@ h1 {
     justify-content: space-around;
     position: absolute;
     bottom: 44px;
-
 }
 
 .b-1{
