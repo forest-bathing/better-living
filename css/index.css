@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     margin-bottom: -12px;
-
 }
 
 body {
@@ -16,7 +15,6 @@ body {
     background-color: #5B8168;
     overflow-x:hidden;
 }
-
 
 body::-webkit-scrollbar {
     display: none;
@@ -62,7 +60,6 @@ nav {
     position: absolute;
     position: fixed;
     justify-content: space-between;
-    
 }
 
 .weather {
@@ -127,7 +124,6 @@ a {
     list-style-type: none;
     padding-left: 16px;
     padding-right: 16px;
-    
 }
 
 .burgericon {
