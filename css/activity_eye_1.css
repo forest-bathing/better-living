@@ -1,5 +1,8 @@
+
+
 body {
-    margin-top: 0;
+    padding: 0;
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
@@ -32,11 +35,6 @@ nav {
     padding-left: 16px;
 }
 
-.s {
-    position: absolute;
-    right: 16px;
-}
-
 h1 {
     font-size: 50px;
     color: #548B6C;
@@ -46,17 +44,17 @@ h1 {
 .box {
     background-image: url(../img/activity_eye_1_background.png);
     background-size: 100%;
+    width: 100%;
     height: 800px;
 }
 
 .b {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: absolute;
     margin-top: 120%;
-    padding-left: 16px;
-    padding-right: 16px;
+
 }
 
 .b-1{

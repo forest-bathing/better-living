@@ -51,6 +51,7 @@ p {
     color: rgb(255, 255, 255);
 }
 
+
 nav {
     width: 100%;
     display: flex;
@@ -112,6 +113,7 @@ a {
 }
 
 .menu {
+    background-color: ;
     background-image: url(../img/burger.png);
     height: 900px;
     position: absolute;
