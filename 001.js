@@ -1,17 +1,40 @@
-//*輪播
-const slides = document.querySelectorAll(".slide");
-const slider = document.querySelector(".slider");
 
-let currentSlide = 0;
-slides[currentSlide].classList.add("active");
+//點擊空白處關閉
+$(document).ready(function() {
+  const menu = $('.menu');
+  const toggleBtn = $('.menu-toggle');
 
-function nextSlide() {
-  slides[currentSlide].classList.remove("active");
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].classList.add("active");
-}
+  // 點擊菜單按鈕時，切換菜單的顯示/隱藏狀態
+  toggleBtn.on('click', function() {
+    menu.toggleClass('open');
+  });
 
-setInterval(nextSlide, 5000); 
+  // 在點擊菜單內容外部的任何區域時，關閉菜單內容
+  $(document).on('click', function(event) {
+    if (!menu.is(event.target) && !toggleBtn.is(event.target) && menu.has(event.target).length === 0) {
+      menu.removeClass('open');
+    }
+  });
+});
+
+
+
+
+
+// //*輪播
+// const slides = document.querySelectorAll(".slide");
+// const slider = document.querySelector(".slider");
+
+// let currentSlide = 0;
+// slides[currentSlide].classList.add("active");
+
+// function nextSlide() {
+//   slides[currentSlide].classList.remove("active");
+//   currentSlide = (currentSlide + 1) % slides.length;
+//   slides[currentSlide].classList.add("active");
+// }
+
+// setInterval(nextSlide, 5000); 
 
 
 //*倒數

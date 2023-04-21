@@ -2,104 +2,80 @@
 <html>
 
 <head>
-<link rel="stylesheet" href="./css/index.css">
-	<title>好好森活</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>菜單示例</title>
 	<style>
-		.slider {
-			position: relative;
+		.hamburger-button {
+			background-color: rgba(255, 255, 255, 0);
+			background-image: url(./img/burger_o.svg);
+			width: 44px;
+			height: 44px;
+			border: none;
+
 		}
 
-		.slide {
+		.menu-content {
 			display: none;
 			position: absolute;
 			top: 0;
-			left: 0;
-		}
-
-		.active {
-			display: block;
-		}
-
-		.box0 {
-			width: 390px;
-			height: 388px;
-			padding-top: 150px;
-			background-size: 100% 100%;
-			position: absolute;
-			text-align: center;
-			color: #ffffff;
-		}
-
-		.box2-0 {
-			background-image: url(./img/2-6.png);
-			background-size: 100% 100%;
-		}
-
-		.box3-0 {
-			background-image: url(./img/2-7.png);
-			background-size: 100% 100%;
-		}
-
-		.box4-0 {
-			background-image: url(./img/2-8.png);
-			background-size: 100% 100%;
+			right: 0;
+			width: 100%;
+			background-color: #00000037;
+			padding: 10px;
+			box-sizing: border-box;
+			border: 1px solid #ccc;
 		}
 	</style>
 </head>
 
 <body>
 
-	<div class="slider">
-		<div class="slide active">
-			<div class="box0 box2-0">
-				<h1>屏東 · 雙溪</h1>
-				<div class="flex">
-					<p><img src="./img/phytoncine.svg" alt="" class="icon"> 12880 ppd</p>
-					<p><img src="./img/negative ions.svg" alt="" class="icon"> 13640 ions/cm³</p>
-					<p><img src="./img/weather-1.svg" alt="" class="icon"> 11 °C</p>
-				</div>
-			</div>
-
-		</div>
-		<div class="slide">
-			<div class="box0 box3-0">
-				<h1>台東 · 知本</h1>
-				<div class="flex">
-					<p><img src="./img/phytoncine.svg" alt="" class="icon"> 10420 ppd</p>
-					<p><img src="./img/negative ions.svg" alt="" class="icon"> 11580 ions/cm³</p>
-					<p><img src="./img/weather-1.svg" alt="" class="icon"> 15 °C</p></div>
-			</div>
-		</div>
-		<div class="slide">
-			<div class="box0 box4-0">
-				<h1>花蓮 · 富源</h1>
-				<div class="flex">
-					<p><img src="./img/phytoncine.svg" alt="" class="icon"> 10440 ppd</p>
-					<p><img src="./img/negative ions.svg" alt="" class="icon"> 11520 ions/cm³</p>
-					<p><img src="./img/weather-1.svg" alt="" class="icon"> 16 °C</p>
-				 </div>
-			</div>
+	<button class="hamburger-button"></button>
+	<div class="menu-content">
+		<div>
+			<ul>
+				<li><a href=""><img src="./img/burger_o.svg" alt="" height="44px" width="44px" class="burgericon"></a>
+				</li>
+				<li class="li"><a href="./ch.html"><img src="./img/forest.svg" alt="" height="44px" width="44px"></a>
+				</li>
+				<li class="li"><a href="./badge.html"><img src="./img/badge.svg" alt="" height="44px" width="44px"></a>
+				</li>
+				<li class="li"><a href="./mood.html"><img src="./img/mood.svg" alt="" height="44px" width="44px"></a>
+				</li>
+				<li class="li"><a href="./record.html"><img src="./img/record.svg" alt="" height="44px"
+							width="44px"></a>
+				</li>
+				<li class="li"><a href="./compass.html"><img src="./img/compass.svg" alt="" height="44px"
+							width="44px"></a>
+				</li>
+				<li class="li"><a href="./VR360.html"><img src="./img/VR360.svg" alt="" height="44px" width="44px"></a>
+				</li>
+				<li class="li"><a href="./community.html"><img src="./img/community.svg" alt="" height="44px"
+							width="44px"></a></li>
+				<li class="li"><a href="./set_up.html"><img src="./img/set up.svg" alt="" height="44px"
+							width="44px"></a>
+				</li>
+			</ul>
 		</div>
 	</div>
 
 
 	<script>
-		const slides = document.querySelectorAll(".slide");
-		const slider = document.querySelector(".slider");
+		const hamburgerButton = document.querySelector('.hamburger-button');
+		const menuContent = document.querySelector('.menu-content');
 
-		let currentSlide = 0;
-		slides[currentSlide].classList.add("active");
+		hamburgerButton.addEventListener('click', () => {
+			menuContent.style.display = 'block';
+		});
 
-		function nextSlide() {
-			slides[currentSlide].classList.remove("active");
-			currentSlide = (currentSlide + 1) % slides.length;
-			slides[currentSlide].classList.add("active");
-		}
-
-		setInterval(nextSlide, 4000);
-
+		document.addEventListener('click', (event) => {
+			if (!menuContent.contains(event.target) && event.target !== hamburgerButton) {
+				menuContent.style.display = 'none';
+			}
+		});
 	</script>
-
 </body>
 
 </html>
