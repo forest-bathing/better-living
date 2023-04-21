@@ -16,3 +16,16 @@ function fadeSlide() {
 
 setInterval(fadeSlide, 3000);
 
+
+
+const hamburgerButton = document.querySelector('.hamburger-button');
+const menuContent = document.querySelector('.menu-content');
+const overlay = document.querySelector('.overlay');
+
+hamburgerButton.addEventListener('click', () => {
+  document.body.classList.toggle('menu-open');
+});
+
+overlay.addEventListener('click', () => {
+  document.body.classList.remove('menu-open');
+});

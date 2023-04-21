@@ -1,83 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>菜單示例</title>
-    <style>
-      .menu-content {
-        display: none;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        width: 44px;
-        background-image: url(./img/burger.png);
-        padding: 10px;
-        box-sizing: border-box;
-      }
 
-      .overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>菜單示例</title>
+  <style>
+    .hamburger-button {
+      background-color: rgba(255, 255, 255, 0);
+      background-image: url(./img/burger_o.svg);
+      width: 44px;
+      height: 44px;
+      border: none;
+      position: absolute;
+      top: 0;
+      right: 16px;
+    }
 
-      .menu-open .overlay {
-        display: block;
-      }
+    .menu-content {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url(./img/burger.png);
+      height: 800px;
+      box-sizing: border-box;
+      padding-left: 16px;
+      padding-right: 16px;
+      overflow-y: hidden;
+    }
 
-      .menu-open .menu-content {
-        display: block;
-      }
-    </style>
-  </head>
-  <body>
-    <button class="hamburger-button">菜單</button>
-    <div class="overlay"></div>
-    <div class="menu-content">
-      <div>
-        <ul>
-          <li><a href=""><img src="./img/burger_o.svg" alt="" height="44px" width="44px" class="burgericon"></a>
-          </li>
-          <li class="li"><a href="./ch.html"><img src="./img/forest.svg" alt="" height="44px" width="44px"></a>
-          </li>
-          <li class="li"><a href="./badge.html"><img src="./img/badge.svg" alt="" height="44px" width="44px"></a>
-          </li>
-          <li class="li"><a href="./mood.html"><img src="./img/mood.svg" alt="" height="44px" width="44px"></a>
-          </li>
-          <li class="li"><a href="./record.html"><img src="./img/record.svg" alt="" height="44px"
-                width="44px"></a>
-          </li>
-          <li class="li"><a href="./compass.html"><img src="./img/compass.svg" alt="" height="44px"
-                width="44px"></a>
-          </li>
-          <li class="li"><a href="./VR360.html"><img src="./img/VR360.svg" alt="" height="44px" width="44px"></a>
-          </li>
-          <li class="li"><a href="./community.html"><img src="./img/community.svg" alt="" height="44px"
-                width="44px"></a></li>
-          <li class="li"><a href="./set_up.html"><img src="./img/set up.svg" alt="" height="44px"
-                width="44px"></a>
-          </li>
-        </ul>
-      </div>
+    ul {
+      list-style-type: none;
+      margin-top: 0;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .menu-open .overlay {
+      display: block;
+    }
+
+    .menu-open .menu-content {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="hamburger-button"></button>
+  <div class="overlay"></div>
+  <div class="menu-content">
+    <div>
+      <ul>
+        <li><a href=""><img src="./img/burger_o.svg" alt="" height="44px" width="44px" class="burgericon"></a>
+        </li>
+        <li class="li"><a href="./ch.html"><img src="./img/forest.svg" alt="" height="44px" width="44px"></a>
+        </li>
+        <li class="li"><a href="./badge.html"><img src="./img/badge.svg" alt="" height="44px" width="44px"></a>
+        </li>
+        <li class="li"><a href="./mood.html"><img src="./img/mood.svg" alt="" height="44px" width="44px"></a>
+        </li>
+        <li class="li"><a href="./record.html"><img src="./img/record.svg" alt="" height="44px" width="44px"></a>
+        </li>
+        <li class="li"><a href="./compass.html"><img src="./img/compass.svg" alt="" height="44px" width="44px"></a>
+        </li>
+        <li class="li"><a href="./VR360.html"><img src="./img/VR360.svg" alt="" height="44px" width="44px"></a>
+        </li>
+        <li class="li"><a href="./community.html"><img src="./img/community.svg" alt="" height="44px" width="44px"></a>
+        </li>
+        <li class="li"><a href="./set_up.html"><img src="./img/set up.svg" alt="" height="44px" width="44px"></a>
+        </li>
+      </ul>
     </div>
-    <script>
-      const hamburgerButton = document.querySelector('.hamburger-button');
-      const menuContent = document.querySelector('.menu-content');
-      const overlay = document.querySelector('.overlay');
+  </div>
+  <script>
+    const hamburgerButton = document.querySelector('.hamburger-button');
+    const menuContent = document.querySelector('.menu-content');
+    const overlay = document.querySelector('.overlay');
 
-      hamburgerButton.addEventListener('click', () => {
-        document.body.classList.toggle('menu-open');
-      });
+    hamburgerButton.addEventListener('click', () => {
+      document.body.classList.toggle('menu-open');
+    });
 
-      overlay.addEventListener('click', () => {
-        document.body.classList.remove('menu-open');
-      });
-    </script>
-  </body>
+    overlay.addEventListener('click', () => {
+      document.body.classList.remove('menu-open');
+    });
+  </script>
+</body>
+
 </html>
