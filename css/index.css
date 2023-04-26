@@ -89,6 +89,10 @@ nav {
     width: 134px;
 }
 
+
+
+
+
 #menu-switcher {
     display: none;
 }
@@ -110,8 +114,6 @@ nav {
     top: 0;
     right: 0;
     background-image: url(../img/burger.png);
-
-
     height: 900px;
 }
 
@@ -147,6 +149,11 @@ ul {
 li {
     padding-bottom: 39px;
 }
+
+
+
+
+
 
 .name {
     position: absolute;
