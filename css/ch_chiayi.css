@@ -58,6 +58,9 @@ a {
     text-decoration: none;
 }
 
+
+
+
 #menu-switcher {
     display: none;
 }
@@ -112,6 +115,7 @@ ul {
 li {
     padding-bottom: 16px;
 }
+
 
 
 
@@ -186,7 +190,7 @@ nav {
 }
 
 .question-btn {
-    background-image: url(../img/2-3.png);
+    background-image: url(../img/2-5.png);
     background-size: 100% 100%;
     background-color: transparent;
     border: none;
@@ -278,7 +282,7 @@ nav {
     position: fixed;
     top: 90%;
     z-index: 1000;
-    left: 12%;
+    margin-left: -179px;
 }
 
 .box6 {
