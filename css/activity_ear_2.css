@@ -75,9 +75,8 @@ h1 {
 
 .smell2 {
     position: absolute;
-    right: -100px;
     top: -100px;
-    right: -180px;
+    left: -378px;
     overflow: hidden;
 }
 
