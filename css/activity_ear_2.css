@@ -61,6 +61,10 @@ h1 {
     right: 10px;
 }
 
+.smallall {
+    width: 390px;
+}
+
 .smell {
     position: absolute;
     top: 3%;
@@ -71,6 +75,7 @@ h1 {
 
 .smell2 {
     position: absolute;
+    right: -100px;
     top: -100px;
     right: -180px;
     overflow: hidden;
